@@ -7,12 +7,26 @@
     <span
       class="flex justify-end items-center space-x-2 text-blue-800 font-bold pl-96 "
     >
-      <button class="hover:bg-blue-800 hover:text-blue-300 border-r-2">
-        INICIO
-      </button>
-      <button>QUIENES SOMOS</button>
-      <button>NUESTROS PROYECTOS</button>
-      <button>CONTACTO</button>
+      <router-link
+        :to="{ name: 'Inicio' }"
+        class="text-indigo-600 font-semibold hover:underline"
+        >INICIO</router-link
+      >
+      <router-link
+        :to="{ name: 'QuienesSomos' }"
+        class="text-indigo-600 font-semibold hover:underline"
+        >QUIENES SOMOS</router-link
+      >
+      <router-link
+        :to="{ name: 'NuestrosProyectos' }"
+        class="text-indigo-600 font-semibold hover:underline"
+        >NUESTROS PROYECTOS</router-link
+      >
+      <router-link
+        :to="{ name: 'Contacto' }"
+        class="text-indigo-600 font-semibold hover:underline"
+        >CONTACTO</router-link
+      >
     </span>
   </div>
 </template>
