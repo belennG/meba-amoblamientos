@@ -1,15 +1,17 @@
 <template>
   <div id="app">
+    <ContactInfo />
     <NavBar />
   </div>
 </template>
 
 <script>
 import NavBar from "@/components/NavBar.vue";
+import ContactInfo from "@/components/ContactInfo.vue";
 
 export default {
   name: "App",
-  components: { NavBar },
+  components: { NavBar, ContactInfo },
 };
 </script>
 
