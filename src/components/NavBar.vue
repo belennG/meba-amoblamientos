@@ -5,7 +5,7 @@
       <h1 class="text-blue-800 font-bold">Amoblamientos MEBA</h1>
     </span>
     <span
-      class="flex justify-end items-center space-x-2 text-blue-800 font-bold pl-96 "
+      class="flex flex-shrink justify-end items-center space-x-2 text-blue-800 font-bold pl-96 "
     >
       <router-link
         :to="{ name: 'Inicio' }"

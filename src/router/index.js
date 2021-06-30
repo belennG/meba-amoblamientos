@@ -20,12 +20,12 @@ const routes = [
   },
   {
     path: "/nuestros-proyectos",
-    name: "Nuestros Proyectos",
+    name: "NuestrosProyectos",
     component: NuestrosProyectos,
   },
   {
     path: "/quienes-somos",
-    name: "Quienes Somos",
+    name: "QuienesSomos",
     component: QuienesSomos,
   },
 ];

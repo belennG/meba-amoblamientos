@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <span>
+  <div class="inline">
+    <span class="w-auto">
       <p><i class="fas fa-phone-alt pr-2"></i>+54 2346 408639</p>
     </span>
     <span class="flex justify-end">

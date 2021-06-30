@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "../.."
+	},
+	{
+		"path": "../../../toilet-map-leipzig"
+	},
+	{
+		"path": "../../../spark"
+	}
+],
+  "settings": {
+    "git.ignoreLimitWarning": true
+  }
+}
