@@ -1,35 +1,37 @@
 <template>
   <div>
     <transition-group name="fade" tag="div">
-      <div v-for="i in [currentIndex]" :key="i">
-        <img :src="currentImg" class="h-full w-full" />
+      <div v-for="i in [currentIndex]" :key="i" class="relative">
+        <img :src="currentImg" class="h-screen w-screen" />
       </div>
     </transition-group>
-    <a
-      class="prev cursor-pointer absolute w-auto font-bold rounded-lg hover:bg-opacity-90 top-1/3 left-0"
+    <button
+      class="prev cursor-pointer absolute font-bold rounded-lg hover:bg-opacity-90 top-2/4 left-0 h-30 w-30 hover:bg-gray-600"
       @click="prev"
       href="#"
-      >&#10094; Previous</a
     >
-    <a
-      class="next cursor-pointer absolute w-auto font-bold rounded-lg hover:bg-opacity-90 top-1/3 right-0"
+      <i class="fas fa-chevron-left fa-7x"></i>
+    </button>
+    <button
+      class="next cursor-pointer absolute font-bold rounded-lg hover:bg-opacity-90 top-2/4 right-0 h-30 w-30 hover:bg-gray-600"
       @click="next"
       href="#"
-      >&#10095; Next</a
     >
+      <i class="fas fa-chevron-right fa-7x"></i>
+    </button>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import MEBA2 from "@/assets/inicio-slider/MEBA4.jpeg";
+import MEBA2 from "@/assets/inicio-slider/MEBA2.jpeg";
 import MEBA4 from "@/assets/inicio-slider/MEBA4.jpeg";
-import MEBA5 from "@/assets/inicio-slider/MEBA4.jpeg";
-import MEBA9 from "@/assets/inicio-slider/MEBA4.jpeg";
-import MEBA13 from "@/assets/inicio-slider/MEBA4.jpeg";
-import MEBA14 from "@/assets/inicio-slider/MEBA4.jpeg";
-import MEBA15 from "@/assets/inicio-slider/MEBA4.jpeg";
-import MEBA16 from "@/assets/inicio-slider/MEBA4.jpeg";
+import MEBA5 from "@/assets/inicio-slider/MEBA5.jpeg";
+import MEBA9 from "@/assets/inicio-slider/MEBA9.jpeg";
+import MEBA13 from "@/assets/inicio-slider/MEBA13.jpeg";
+import MEBA14 from "@/assets/inicio-slider/MEBA14.jpeg";
+import MEBA15 from "@/assets/inicio-slider/MEBA15.jpeg";
+import MEBA16 from "@/assets/inicio-slider/MEBA16.jpeg";
 
 export default Vue.extend({
   name: "Slider",
