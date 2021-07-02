@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="h-screen">
     <transition-group name="fade" tag="div">
       <div v-for="i in [currentIndex]" :key="i" class="relative">
-        <img :src="currentImg" class="h-screen w-screen" />
+        <img :src="currentImg" class="w-screen" id="main-image" />
       </div>
     </transition-group>
     <button
@@ -68,6 +68,12 @@ export default Vue.extend({
 </script>
 
 <style>
+#main-image {
+  height: calc(100vh - 88px);
+  width: calc(100vw - 120px);
+  margin-left: 52px;
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: all 0.9s ease;

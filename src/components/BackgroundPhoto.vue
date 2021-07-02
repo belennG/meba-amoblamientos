@@ -1,11 +1,13 @@
 <template>
-  <div style="">
-    <img :src="BG1" alt="" class="h-screen w-screen opacity-40" />
-    <h1>Envíenos su consulta</h1>
-    <p>
-      Estamos para responder todas sus dudas. Complete el formulario y
-      contestaremos a la brevedad.
-    </p>
+  <div style="" class="relative min-h-screen min-hw-screen">
+    <img
+      :src="BG1"
+      alt=""
+      class="opacity-40 absolute inset-0 object-cover z-0"
+    />
+    <div class="z-80 absolute">
+      <slot></slot>
+    </div>
   </div>
 </template>
 
