@@ -3,6 +3,7 @@
     <ContactInfo />
     <NavBar />
     <router-view />
+    <!-- footer? -->
   </div>
 </template>
 

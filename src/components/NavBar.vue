@@ -27,7 +27,7 @@
         >
           <router-link
             :to="{ name: 'QuienesSomos' }"
-            class="font-semibold text-sm md:text-base mx-auto"
+            class="font-semibold text-sm md:text-base mx"
             >QUIENES SOMOS</router-link
           >
         </div>
@@ -53,21 +53,20 @@
     </nav>
     <!-- End desktop navbar -->
     <!-- Start mobile navbar -->
-    <nav id="navbar-mobile" class="sm:hidden">
+    <nav id="navbar-mobile" class="sm:hidden z-40">
       <button
         @click="mobileNavOpen = true"
         v-if="!mobileNavOpen"
         id="display-menu"
-        class="top-10 right-4 absolute"
+        class="absolute right-3 top-10"
       >
         <i class="fas fa-bars fa-2x"></i>
       </button>
       <button @click="mobileNavOpen = false" v-else>
         <i class="fas fa-times fa-2x top-10 right-4 absolute"></i>
       </button>
-      <!-- v-if with close icon to display if mobile nav bar is open -->
       <div
-        class="mobile-navbar absolute top-16 right-4 z-40"
+        class="mobile-navbar w-40 z-40 relative bg-yellow-400 top-0 right-1"
         v-if="mobileNavOpen"
       >
         <router-link
