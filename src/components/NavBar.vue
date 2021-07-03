@@ -10,11 +10,11 @@
         <h1 class="text-blue-800 font-bold">Amoblamientos MEBA</h1>
       </router-link>
       <div
-        class="flex justify-end items-center space-x-4 text-blue-800 font-bold"
+        class="flex justify-end items-center space-x-4 text-blue-800 font-bold "
         id="navbar-links"
       >
         <div
-          class="w-20 h-16 pt-5 hover:bg-indigo-600 hover:text-white text-indigo-600"
+          class="w-20 h-16 hover:bg-indigo-600 hover:text-white text-indigo-600 router-link-container"
         >
           <router-link
             :to="{ name: 'Inicio' }"
@@ -23,16 +23,16 @@
           >
         </div>
         <div
-          class="w-24 h-16 hover:bg-indigo-600 hover:text-white text-indigo-600 flex items-center"
+          class="w-16 h-16 hover:bg-indigo-600 hover:text-white text-indigo-600 flex router-link-container"
         >
           <router-link
             :to="{ name: 'QuienesSomos' }"
-            class="font-semibold text-sm md:text-base mx"
+            class="font-semibold text-sm md:text-base"
             >QUIENES SOMOS</router-link
           >
         </div>
         <div
-          class="w-24 h-16 pt-2 hover:bg-indigo-600 hover:text-white text-indigo-600"
+          class="w-24 h-16 hover:bg-indigo-600 hover:text-white text-indigo-600 router-link-container"
         >
           <router-link
             :to="{ name: 'NuestrosProyectos' }"
@@ -41,7 +41,7 @@
           >
         </div>
         <div
-          class="w-24 h-16 pt-5 hover:bg-indigo-600 hover:text-white text-indigo-600"
+          class="w-24 h-16 hover:bg-indigo-600 hover:text-white text-indigo-600 router-link-container"
         >
           <router-link
             :to="{ name: 'Contacto' }"
@@ -66,12 +66,13 @@
         <i class="fas fa-times fa-2x top-10 right-4 absolute"></i>
       </button>
       <div
-        class="mobile-navbar w-40 z-40 relative bg-yellow-400 top-0 right-1"
+        class="mobile-navbar w-40 z-40 absolute bg-yellow-400 top-0 right-1 px-1 py-1"
+        style="margin-top:90px"
         v-if="mobileNavOpen"
       >
         <router-link
           :to="{ name: 'Inicio' }"
-          class="text-indigo-600 font-semibold block"
+          class="text-indigo-600 font-semibold block hover:bg-yellow-50"
           >INICIO</router-link
         >
         <router-link
@@ -119,5 +120,11 @@ export default Vue.extend({
   * router-link {
     font-size: 0.875rem;
   }
+}
+
+.router-link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

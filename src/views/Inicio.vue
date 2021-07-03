@@ -6,19 +6,21 @@
       id="render"
       class="h-screen w-screen bg-yellow-400 px-10 py-10 grid grid-cols-2"
     >
-      <h1 class="text-4xl">
+      <h1 class="text-4xl mx-2">
         Querés ver como quedará tu farmacia antes de tenerla? Render incluido en
         todos los presupuestos
       </h1>
       <div class="render-fotos">
-        <img :src="Render1" alt="" class="w-100 h-80 mb-2" />
-        <img :src="Render2" alt="" class="w-100 h-80" />
+        <img :src="Render1" alt="" class="w-100 h-80 mb-2 ml-2 grow" />
+        <img :src="Render2" alt="" class="w-100 h-80 ml-2 grow" />
       </div>
     </div>
     <div id="testimonials" class="h-screen w-screen bg-green-400">
       <Testimonials />
     </div>
-    <div id="convenios" class="h-screen w-screen bg-pink-400"></div>
+    <div class="h-screen w-screen bg-pink-400 px-8 py-8">
+      <Convenios />
+    </div>
   </div>
 </template>
 
@@ -28,6 +30,7 @@ import Slider from "@/components/Slider.vue";
 import Testimonials from "@/components/Testimonials.vue";
 import Render1 from "@/assets/render/Render1.jpeg";
 import Render2 from "@/assets/render/Render2.jpeg";
+import Convenios from "@/components/Convenios.vue";
 
 export default Vue.extend({
   data() {
@@ -39,8 +42,17 @@ export default Vue.extend({
   components: {
     Slider,
     Testimonials,
+    Convenios,
   },
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.2);
+}
+</style>
