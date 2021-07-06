@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Slider />
+    <Slider v-bind="images" />
     <div id="intro" class="h-screen w-screen bg-red-400 flex px-10 py-10">
       <h1 class="flex items-center justify-center text-7xl ml-6">
         ESTAMOS EN TODO EL PAÍS
@@ -8,8 +8,8 @@
       <p class="flex items-center justify-center mr-20 ml-20 text-2xl">
         Somos líderes en diseño y construcción de mobiliario para tu negocio -ya
         sea farmacia, consultorio, dietética, veterinaria, pet-shop,
-        laboratorio. Su satisfación es lo más importante. Trabajamos las 24 hs,
-        los 365 días para Usted.
+        laboratorio. Su satisfación es lo más importante. Atención
+        personalizada, trabajamos las 24 hs, los 365 días para Usted.
       </p>
     </div>
     <div
@@ -30,7 +30,8 @@
       </div>
     </div>
     <div id="testimonials" class="h-screen w-screen bg-green-400">
-      <Testimonials />
+      <!-- <Testimonials /> -->
+      <Farmacia />
     </div>
     <div class="h-screen w-screen bg-pink-400 px-8 py-8">
       <Convenios />
@@ -41,15 +42,24 @@
 
 <script lang="ts">
 import Vue from "vue";
-import Slider from "@/components/Slider.vue";
-import Testimonials from "@/components/Testimonials.vue";
 import Render1 from "@/assets/render/Render1.jpeg";
 import Render2 from "@/assets/render/Render2.jpeg";
 import Render3 from "@/assets/render/Render3.jpeg";
 import Render4 from "@/assets/render/Render4.jpeg";
-import Footer from "@/components/Footer.vue";
+import MEBA2 from "@/assets/inicio-slider/MEBA2.jpeg";
+import MEBA4 from "@/assets/inicio-slider/MEBA4.jpeg";
+import MEBA5 from "@/assets/inicio-slider/MEBA5.jpeg";
+import MEBA9 from "@/assets/inicio-slider/MEBA9.jpeg";
+import MEBA13 from "@/assets/inicio-slider/MEBA13.jpeg";
+import MEBA14 from "@/assets/inicio-slider/MEBA14.jpeg";
+import MEBA15 from "@/assets/inicio-slider/MEBA15.jpeg";
+import MEBA16 from "@/assets/inicio-slider/MEBA16.jpeg";
 
+import Slider from "@/components/Slider.vue";
+// import Testimonials from "@/components/Testimonials.vue";
+import Footer from "@/components/Footer.vue";
 import Convenios from "@/components/Convenios.vue";
+import Farmacia from "@/components/Farmacia.vue";
 
 export default Vue.extend({
   data() {
@@ -58,13 +68,15 @@ export default Vue.extend({
       Render2: Render2,
       Render3: Render3,
       Render4: Render4,
+      images: [MEBA2, MEBA4, MEBA5, MEBA9, MEBA13, MEBA14, MEBA15, MEBA16],
     };
   },
   components: {
     Slider,
-    Testimonials,
+    // Testimonials,
     Convenios,
     Footer,
+    Farmacia,
   },
 });
 </script>
