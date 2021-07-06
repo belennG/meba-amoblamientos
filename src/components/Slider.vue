@@ -1,11 +1,14 @@
 <template>
-  <div class="h-screen">
+  <div class="h-screen w-screen z-10">
+    <h1 class="z-40 absolute top-1/3 text-6xl text-white">
+      Amoblamientos de Farmacia
+    </h1>
     <transition-group name="fade" tag="div">
       <div v-for="i in [currentIndex]" :key="i" class="relative">
-        <img :src="currentImg" class="w-screen" id="main-image" />
+        <img :src="currentImg" class="w-screen h-screen" id="main-image" />
       </div>
     </transition-group>
-    <button
+    <!-- <button
       class="prev cursor-pointer absolute font-bold rounded-lg hover:bg-opacity-90 top-2/4 left-0 h-30 w-30 hover:bg-gray-600"
       @click="prev"
       href="#"
@@ -18,7 +21,7 @@
       href="#"
     >
       <i class="fas fa-chevron-right fa-7x"></i>
-    </button>
+    </button> -->
   </div>
 </template>
 
@@ -68,11 +71,11 @@ export default Vue.extend({
 </script>
 
 <style>
-#main-image {
+/* #main-image {
   height: calc(100vh - 88px);
   width: calc(100vw - 120px);
   margin-left: 52px;
-}
+} */
 
 .fade-enter-active,
 .fade-leave-active {

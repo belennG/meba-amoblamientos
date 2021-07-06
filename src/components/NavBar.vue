@@ -1,7 +1,10 @@
 <template>
   <div>
     <!-- Start Desktop Navbar -->
-    <nav id="navbar" class="border-2 flex w-full bg-blue-300 justify-between">
+    <nav
+      id="navbar"
+      class="border-2 flex w-full h-20 bg-blue-300 justify-between"
+    >
       <router-link
         :to="{ name: 'Inicio' }"
         class="navbar flex items-center w-30"

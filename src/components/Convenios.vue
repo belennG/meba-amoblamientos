@@ -1,17 +1,20 @@
 <template>
-  <div>
-    <router-link :to="{ name: 'Contacto' }" class=" md:text-base block"
-      ><h1 class="font-semibold text-2xl text-center">
+  <div class="py-14">
+    <router-link
+      :to="{ name: 'Contacto' }"
+      class=" md:text-base hover:underline"
+      ><h1 class="font-semibold text-5xl text-center align-baseline mb-20">
         Consulte por convenios en su provincia
       </h1></router-link
     >
-    <div id="convenios" class="flex router-link-container h-screen inset-x-4">
+
+    <div id="convenios" class="router-link-container inset-x-4">
       <div
         class="border-2 w-72 h-80 mx-2 my-2 py-4 bg-yellow-200 rounded-lg"
         v-for="(convenio, index) in convenios"
         :key="index"
       >
-        <h1 class="flex items-center justify-center">
+        <h1 class="flex items-center justify-center text-xl">
           {{ convenio.name }}
         </h1>
         <div class="flex items-center justify-center h-72">
@@ -53,4 +56,8 @@ export default Vue.extend({
   justify-content: center;
   align-items: center;
 }
+
+/* .height {
+  height: calc(100vh - 30px);
+} */
 </style>
