@@ -11,6 +11,7 @@
           <form action="">
             <p>Nombre:</p>
             <input
+              required
               type="text"
               name="Nombre"
               id=""
@@ -18,6 +19,7 @@
             />
             <p>Email:</p>
             <input
+              required
               type="email"
               name="Email"
               id=""
@@ -25,6 +27,7 @@
             />
             <p>Teléfono:</p>
             <input
+              required
               type="tel"
               name="telefono"
               id=""
@@ -32,6 +35,7 @@
             />
             <p>Su consulta:</p>
             <textarea
+              required
               name=""
               id=""
               cols="30"

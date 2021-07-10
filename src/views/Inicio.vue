@@ -34,9 +34,36 @@
         <img :src="Render4" alt="" class="w-100 h-80 mb-2 ml-2 grow" />
       </div>
     </div>
-    <div id="testimonials" class="h-screen w-screen bg-green-400">
+    <div
+      id="testimonials"
+      class="h-screen w-screen bg-green-400 flex content-around flex-wrap"
+    >
       <!-- <Testimonials /> -->
-      <Farmacia />
+      <!-- Why doesnt it take the height screen? -->
+      <Farmacia
+        :farmaciaImage="fotosGralPico[0]"
+        :farmaciaUbicacion="'General Pico, Provincia de Buenos Aires'"
+      />
+      <Farmacia
+        :farmaciaImage="fotosGralPico[1]"
+        :farmaciaUbicacion="'Provincia de Cordoba'"
+      />
+      <Farmacia
+        :farmaciaImage="fotosGralPico[2]"
+        :farmaciaUbicacion="'Provincia de Santa Fe'"
+      />
+      <Farmacia
+        :farmaciaImage="fotosGralPico[0]"
+        :farmaciaUbicacion="'General Pico, Provincia de Buenos Aires'"
+      />
+      <Farmacia
+        :farmaciaImage="fotosGralPico[1]"
+        :farmaciaUbicacion="'Provincia de Cordoba'"
+      />
+      <Farmacia
+        :farmaciaImage="fotosGralPico[2]"
+        :farmaciaUbicacion="'Provincia de Santa Fe'"
+      />
     </div>
     <div class="h-screen w-screen bg-pink-400 px-8 py-8">
       <Convenios />
@@ -59,6 +86,10 @@ import MEBA13 from "@/assets/inicio-slider/MEBA13.jpeg";
 import MEBA14 from "@/assets/inicio-slider/MEBA14.jpeg";
 import MEBA15 from "@/assets/inicio-slider/MEBA15.jpeg";
 import MEBA16 from "@/assets/inicio-slider/MEBA16.jpeg";
+import GralPico1 from "@/assets/farmacias/gralPico/GralPico1.jpeg";
+import GralPico2 from "@/assets/farmacias/gralPico/GralPico2.jpeg";
+import GralPico3 from "@/assets/farmacias/gralPico/GralPico3.jpeg";
+import GralPico4 from "@/assets/farmacias/gralPico/GralPico4.jpeg";
 
 import Slider from "@/components/Slider.vue";
 // import Testimonials from "@/components/Testimonials.vue";
@@ -74,6 +105,7 @@ export default Vue.extend({
       Render2: Render2,
       Render3: Render3,
       Render4: Render4,
+      fotosGralPico: [GralPico1, GralPico2, GralPico3, GralPico4],
     };
   },
   components: {

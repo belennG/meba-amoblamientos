@@ -6,24 +6,30 @@
         :to="{ name: 'Inicio' }"
         class="navbar flex items-center w-30"
       >
-        <img src="@/assets/MEBAlogo.jpeg" alt="meba-logo" class="h-16 w-16" />
-        <h1 class="text-black font-bold">Amoblamientos MEBA</h1>
+        <img
+          src="@/assets/MEBAlogo.jpeg"
+          alt="meba-logo"
+          class="h-16 w-16 pl-2"
+        />
+        <h1 class="text-black font-bold">
+          Amoblamientos MEBA
+        </h1>
       </router-link>
       <div
         class="flex justify-end items-center space-x-4 text-black font-bold "
         id="navbar-links"
       >
         <div
-          class="w-20 h-16 hover:text-gray-700 hover:underline text-black router-link-container font-mono"
+          class="w-20 h-16 hover:text-gray-700 hover:underline text-black router-link-container "
         >
           <router-link
             :to="{ name: 'Inicio' }"
-            class="font-semibold text-sm md:text-base top-12"
+            class="text-sm md:text-base top-12"
             >INICIO</router-link
           >
         </div>
         <div
-          class="w-16 h-16 hover:text-gray-700 hover:underline font-serif text-black flex router-link-container"
+          class="w-16 h-16 hover:text-gray-700 hover:underlinetext-black flex router-link-container"
         >
           <router-link
             :to="{ name: 'QuienesSomos' }"
@@ -32,7 +38,7 @@
           >
         </div>
         <div
-          class="w-24 h-16 hover:text-gray-700 hover:underline text-black router-link-container font-sans"
+          class="w-24 h-16 hover:text-gray-700 hover:underline text-black router-link-container "
         >
           <router-link
             :to="{ name: 'NuestrosProyectos' }"
