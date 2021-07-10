@@ -1,8 +1,5 @@
 <template>
   <div class="h-screen w-screen z-10">
-    <h1 class="z-40 absolute top-1/3 text-6xl text-white">
-      Amoblamientos de Farmacia
-    </h1>
     <transition-group name="fade" tag="div">
       <div v-for="i in [currentIndex]" :key="i" class="relative">
         <img :src="currentImg" class="w-screen h-screen" id="main-image" />
@@ -27,15 +24,33 @@
 
 <script lang="ts">
 import Vue from "vue";
+import MEBA2 from "@/assets/inicio-slider/MEBA2.jpeg";
+import MEBA4 from "@/assets/inicio-slider/MEBA4.jpeg";
+import MEBA5 from "@/assets/inicio-slider/MEBA5.jpeg";
+import MEBA9 from "@/assets/inicio-slider/MEBA9.jpeg";
+import MEBA13 from "@/assets/inicio-slider/MEBA13.jpeg";
+import MEBA14 from "@/assets/inicio-slider/MEBA14.jpeg";
+import MEBA15 from "@/assets/inicio-slider/MEBA15.jpeg";
+import MEBA16 from "@/assets/inicio-slider/MEBA16.jpeg";
 
 export default Vue.extend({
+  name: "Slider",
   props: {
-    fotos: {
+    images: {
       type: Array,
       required: true,
+      default: () => [
+        MEBA2,
+        MEBA4,
+        MEBA5,
+        MEBA9,
+        MEBA13,
+        MEBA14,
+        MEBA15,
+        MEBA16,
+      ],
     },
   },
-  name: "Slider",
   data() {
     return {
       timer: null,

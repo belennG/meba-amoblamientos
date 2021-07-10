@@ -1,6 +1,11 @@
 <template>
   <div>
-    <Slider v-bind="images" />
+    <div>
+      <h1 class="z-40 absolute top-1/3 text-6xl text-white">
+        Amoblamientos de Farmacia
+      </h1>
+      <Slider v-bind:images="[images]" />
+    </div>
     <div id="intro" class="h-screen w-screen bg-red-400 flex px-10 py-10">
       <h1 class="flex items-center justify-center text-7xl ml-6">
         ESTAMOS EN TODO EL PAÍS
@@ -64,11 +69,11 @@ import Farmacia from "@/components/Farmacia.vue";
 export default Vue.extend({
   data() {
     return {
+      images: [MEBA2, MEBA4, MEBA5, MEBA9, MEBA13, MEBA14, MEBA15, MEBA16],
       Render1: Render1,
       Render2: Render2,
       Render3: Render3,
       Render4: Render4,
-      images: [MEBA2, MEBA4, MEBA5, MEBA9, MEBA13, MEBA14, MEBA15, MEBA16],
     };
   },
   components: {

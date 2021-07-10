@@ -1,32 +1,29 @@
 <template>
   <div>
     <!-- Start Desktop Navbar -->
-    <nav
-      id="navbar"
-      class="border-2 flex w-full h-20 bg-blue-300 justify-between"
-    >
+    <nav id="navbar" class=" flex w-full h-20 bg-gray-200 justify-between">
       <router-link
         :to="{ name: 'Inicio' }"
         class="navbar flex items-center w-30"
       >
         <img src="@/assets/MEBAlogo.jpeg" alt="meba-logo" class="h-16 w-16" />
-        <h1 class="text-blue-800 font-bold">Amoblamientos MEBA</h1>
+        <h1 class="text-black font-bold">Amoblamientos MEBA</h1>
       </router-link>
       <div
-        class="flex justify-end items-center space-x-4 text-blue-800 font-bold "
+        class="flex justify-end items-center space-x-4 text-black font-bold "
         id="navbar-links"
       >
         <div
-          class="w-20 h-16 hover:bg-indigo-600 hover:text-white text-indigo-600 router-link-container"
+          class="w-20 h-16 hover:text-gray-700 hover:underline text-black router-link-container font-mono"
         >
           <router-link
             :to="{ name: 'Inicio' }"
-            class="font-semibold  text-sm md:text-base top-12"
+            class="font-semibold text-sm md:text-base top-12"
             >INICIO</router-link
           >
         </div>
         <div
-          class="w-16 h-16 hover:bg-indigo-600 hover:text-white text-indigo-600 flex router-link-container"
+          class="w-16 h-16 hover:text-gray-700 hover:underline font-serif text-black flex router-link-container"
         >
           <router-link
             :to="{ name: 'QuienesSomos' }"
@@ -35,7 +32,7 @@
           >
         </div>
         <div
-          class="w-24 h-16 hover:bg-indigo-600 hover:text-white text-indigo-600 router-link-container"
+          class="w-24 h-16 hover:text-gray-700 hover:underline text-black router-link-container font-sans"
         >
           <router-link
             :to="{ name: 'NuestrosProyectos' }"
@@ -44,7 +41,7 @@
           >
         </div>
         <div
-          class="w-24 h-16 hover:bg-indigo-600 hover:text-white text-indigo-600 router-link-container"
+          class="w-24 h-16 hover:text-gray-700 hover:underline text-black router-link-container"
         >
           <router-link
             :to="{ name: 'Contacto' }"

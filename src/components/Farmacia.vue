@@ -9,7 +9,7 @@
       <p>Gral Pico, Provincia de Buenos Aires</p>
     </div>
     <div class="z-40 h-screen w-screen bg-red-300">
-      <Slider />
+      <!-- <Slider /> -->
     </div>
   </div>
 </template>
@@ -20,7 +20,7 @@ import GralPico1 from "@/assets/farmacias/gralPico/GralPico1.jpeg";
 import GralPico2 from "@/assets/farmacias/gralPico/GralPico2.jpeg";
 import GralPico3 from "@/assets/farmacias/gralPico/GralPico3.jpeg";
 import GralPico4 from "@/assets/farmacias/gralPico/GralPico4.jpeg";
-import Slider from "@/components/Slider.vue";
+// import Slider from "@/components/Slider.vue";
 
 export default Vue.extend({
   data() {
@@ -29,7 +29,7 @@ export default Vue.extend({
     };
   },
   components: {
-    Slider,
+    // Slider,
   },
 });
 </script>
