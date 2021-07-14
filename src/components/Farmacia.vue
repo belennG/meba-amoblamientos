@@ -1,6 +1,6 @@
 <template>
-  <div class="h-64 w-96 z-10 grow cursor-pointer border  py-2 my-4">
-    <img :src="farmaciaImage" alt="" />
+  <div class="h-64 w-96 z-10 grow cursor-pointer border py-2 my-4">
+    <img :src="farmaciaImage" alt="" height="256px" width="384px" />
     <p>{{ farmaciaUbicacion }}</p>
   </div>
 </template>

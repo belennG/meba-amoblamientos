@@ -1,0 +1,56 @@
+[
+  {
+    "id": 0,
+    "name": " Farmacia Firmat",
+    "location": "Firmat, Provincia de Santa Fe",
+    "source": {
+      "thumbnail": "src/assets/farmacias/Thumbnails/Firmat.jpeg",
+      "photo": ""
+    }
+  },
+  {
+    "id": 1,
+    "name": "Farmacia General Pico",
+    "location": "General Pico, Provincia de La Pampa",
+    "source": {
+      "thumbnail": "src/assets/farmacias/Thumbnails/GralPico.jpeg",
+      "photo": ""
+    }
+  },
+  {
+    "id": 2,
+    "name": "Farmacia Irma",
+    "location": "Provincia de ",
+    "source": {
+      "thumbnail": "src/assets/farmacias/Thumbnails/Irma.jpeg",
+      "photo": ""
+    }
+  },
+  {
+    "id": 3,
+    "name": "Farmacia Morena Jorge",
+    "location": "Provincia de ",
+    "source": {
+      "thumbnail": "src/assets/farmacias/Thumbnails/MorenaJorge.jpeg",
+      "photo": ""
+    }
+  },
+  {
+    "id": 4,
+    "name": "Farmacia Rivadavia",
+    "location": "Provincia de",
+    "source": {
+      "thumbnail": "src/assets/farmacias/Thumbnails/Rivadavia.jpeg",
+      "photo": ""
+    }
+  },
+  {
+    "id": 5,
+    "name": "Farmacia Schneider",
+    "location": "Provincia de Corrientes",
+    "source": {
+      "thumbnail": "src/assets/farmacias/Thumbnails/Schneider.jpeg",
+      "photo": ""
+    }
+  }
+]

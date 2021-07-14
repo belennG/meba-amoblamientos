@@ -4,6 +4,7 @@ import Contacto from "@/views/Contacto.vue";
 import Inicio from "@/views/Inicio.vue";
 import NuestrosProyectos from "@/views/NuestrosProyectos.vue";
 import QuienesSomos from "@/views/QuienesSomos.vue";
+// import Photo from "@/views/Photo.vue";
 
 Vue.use(VueRouter);
 
@@ -28,6 +29,11 @@ const routes = [
     name: "QuienesSomos",
     component: QuienesSomos,
   },
+  // {
+  //   path: "/photo/:id",
+  //   name: "photo",
+  //   component: Photo,
+  // },
 ];
 
 const router = new VueRouter({

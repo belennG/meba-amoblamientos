@@ -3,7 +3,7 @@
     <img
       :src="BG1"
       alt=""
-      class="opacity-40 absolute inset-0 object-cover z-0"
+      class="opacity-40 absolute inset-0 object-cover z-0 h-screen w-screen"
     />
     <div class="z-80 absolute">
       <slot></slot>
