@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         rubik: ["rubik", "sans-serif"],
         inconsolata: ["inconsolata", "sans-serif"],
+        metropolis: ["metropolis", "sans-serif"],
       },
     },
   },

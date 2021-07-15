@@ -59,7 +59,7 @@
         >
           <div
             @click="showAnswer = !showAnswer"
-            class="h-12 w-2/4 pregunta-frecuente bg-red-500 hover:underline mb-8 z-40 inline"
+            class="h-12 w-1/3 pregunta-frecuente bg-red-500 hover:underline mb-8 z-40 inline"
           >
             <div class="faq-wrapper">
               <h2>{{ faq.pregunta }}</h2>
@@ -91,41 +91,41 @@ export default Vue.extend({
           respuesta:
             "Si. Nuestra empresa tiene presencia en todas las provincias. Así que no se preocupe, llegaremos allí donde lo necesite",
         },
-        {
-          id: 2,
-          pregunta: "Estoy construyendo, cuando debo contactarlos?",
-          respuesta: "Lo antes posible",
-        },
-        {
-          id: 3,
-          pregunta: "Puedo ver el proyecto antes de contratarlo?",
-          respuesta:
-            "Por supuesto. Nuestra oficina de diseño le enviará material para que ud. elija el diseño que más le guste.",
-        },
-        {
-          id: 4,
-          pregunta: "Puedo acceder a bonificaciones?",
-          respuesta:
-            "Consúltenos. Tenemos convenios con varios Colegios de Farmacéuticos de todo el país que también incluyen descuentos.",
-        },
-        {
-          id: 5,
-          pregunta: "Puedo agregar amoblamientos a los existentes?",
-          respuesta:
-            "Si, es posible. Pensaremos alternativas para optimizar los espacios y lograr la máxima funcionalidad entre lo existente y nuestra propuesta. Solo tiene que llamarnos e iremos a visitarlo.",
-        },
-        {
-          id: 6,
-          pregunta: "No puedo cerrar. Como podemos hacer?",
-          respuesta:
-            "Confíe en nosotros. Sabemos hacerlo. Trabajaremos sin interferir en su trabajo.",
-        },
-        {
-          id: 7,
-          pregunta: "Pueden visitarme antes de concretar?",
-          respuesta:
-            "Para nosotros será un placer conocerlo. Recuerde que tenemos presencia en todo el país. Llámenos.",
-        },
+        // {
+        //   id: 2,
+        //   pregunta: "Estoy construyendo, cuando debo contactarlos?",
+        //   respuesta: "Lo antes posible",
+        // },
+        // {
+        //   id: 3,
+        //   pregunta: "Puedo ver el proyecto antes de contratarlo?",
+        //   respuesta:
+        //     "Por supuesto. Nuestra oficina de diseño le enviará material para que ud. elija el diseño que más le guste.",
+        // },
+        // {
+        //   id: 4,
+        //   pregunta: "Puedo acceder a bonificaciones?",
+        //   respuesta:
+        //     "Consúltenos. Tenemos convenios con varios Colegios de Farmacéuticos de todo el país que también incluyen descuentos.",
+        // },
+        // {
+        //   id: 5,
+        //   pregunta: "Puedo agregar amoblamientos a los existentes?",
+        //   respuesta:
+        //     "Si, es posible. Pensaremos alternativas para optimizar los espacios y lograr la máxima funcionalidad entre lo existente y nuestra propuesta. Solo tiene que llamarnos e iremos a visitarlo.",
+        // },
+        // {
+        //   id: 6,
+        //   pregunta: "No puedo cerrar. Como podemos hacer?",
+        //   respuesta:
+        //     "Confíe en nosotros. Sabemos hacerlo. Trabajaremos sin interferir en su trabajo.",
+        // },
+        // {
+        //   id: 7,
+        //   pregunta: "Pueden visitarme antes de concretar?",
+        //   respuesta:
+        //     "Para nosotros será un placer conocerlo. Recuerde que tenemos presencia en todo el país. Llámenos.",
+        // },
       ],
       showAnswer: false,
     };

@@ -1,7 +1,11 @@
 <template>
   <div>
     <!-- Start Desktop Navbar -->
-    <nav id="navbar" class=" flex w-full h-20 bg-gray-200 justify-between">
+    <nav
+      id="navbar"
+      :class="{ scrolled: !view.atTopOfPage }"
+      class="fixed bg-white border-b justify-between p-5 m-auto animated flex w-full h-20"
+    >
       <router-link
         :to="{ name: 'Inicio' }"
         class="navbar flex items-center w-30"
@@ -11,7 +15,7 @@
           alt="meba-logo"
           class="h-16 w-16 pl-2"
         />
-        <h1 class="text-black font-bold">
+        <h1 class="text-black font-bold font-metropolis">
           Amoblamientos MEBA
         </h1>
       </router-link>
@@ -24,7 +28,7 @@
         >
           <router-link
             :to="{ name: 'Inicio' }"
-            class="text-sm md:text-base top-12"
+            class="text-sm md:text-base top-12 font-metropolis"
             >INICIO</router-link
           >
         </div>
@@ -108,14 +112,43 @@ import Vue from "vue";
 export default Vue.extend({
   data() {
     return {
+      view: {
+        atTopOfPage: true,
+      },
       mobileNavOpen: false,
       openMenu: false,
     };
+  },
+  beforeMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    // the function to call when the user scrolls, added as a method
+    handleScroll() {
+      // when the user scrolls, check the pageYOffset
+      if (window.pageYOffset > 0) {
+        // user is scrolled
+        if (this.view.atTopOfPage) this.view.atTopOfPage = false;
+      } else {
+        // user is at top of page
+        if (!this.view.atTopOfPage) this.view.atTopOfPage = true;
+      }
+    },
   },
 });
 </script>
 
 <style scoped>
+nav {
+  z-index: 10;
+}
+
+nav.scrolled {
+  @apply shadow-2xl;
+  border-bottom: 0px;
+  top: 0;
+}
+
 @media (max-width: 641px) {
   #navbar-links {
     display: none;

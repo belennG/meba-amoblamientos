@@ -32,7 +32,7 @@
 <script lang="ts">
 import Vue from "vue";
 import colegioBsAs from "@/assets/colegioBsAs.png";
-import colegioCordoba from "@/assets/colegioCordoba.png";
+import colegioCordoba from "@/assets/colegioCordoba.jpeg";
 import colegioMisiones from "@/assets/colegioMisiones.jpeg";
 import colegioSanLuis from "@/assets/colegioSanLuis.png";
 
@@ -42,7 +42,7 @@ export default Vue.extend({
       convenios: [
         { name: "Provincia de Misiones", image: colegioMisiones },
         { name: "Provincia de Buenos Aires", image: colegioBsAs },
-        { name: "Provncia de San Luis", image: colegioSanLuis },
+        { name: "Provincia de San Luis", image: colegioSanLuis },
         { name: "Provincia de Córdoba", image: colegioCordoba },
       ],
     };

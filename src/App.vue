@@ -23,6 +23,6 @@ export default {
 
 <style>
 body {
-  font-family: rubik;
+  font-family: "Metropolis-Medium";
 }
 </style>

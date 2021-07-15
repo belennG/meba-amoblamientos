@@ -6,11 +6,13 @@
       </h1>
       <Slider :images="imagesAsData"></Slider>
     </div>
-    <div id="intro" class="h-auto w-screen bg-red-400 flex px-10 py-10">
+    <div id="intro" class="h-screen w-screen bg-red-400 flex px-10 py-10">
       <h1 class="flex items-center justify-center text-7xl ml-6">
         ESTAMOS EN TODO EL PAÍS
       </h1>
-      <p class="flex items-center justify-center mr-20 ml-20 text-2xl">
+      <p
+        class="flex items-center justify-center mr-20 ml-20 text-2xl font-metropolis"
+      >
         Somos líderes en diseño y construcción de mobiliario para tu negocio -ya
         sea farmacia, consultorio, dietética, veterinaria, pet-shop,
         laboratorio. Su satisfación es lo más importante. Atención

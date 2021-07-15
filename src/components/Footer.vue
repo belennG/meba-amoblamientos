@@ -34,7 +34,7 @@
     >
       <h1>AQUÍ ESTAMOS</h1>
       <br />
-      <div class="mapouter">
+      <!-- <div class="mapouter">
         <div class="gmap_canvas">
           <iframe
             width="150"
@@ -45,9 +45,21 @@
             scrolling="no"
             marginheight="0"
             marginwidth="0"
-          ></iframe>
+          ></iframe
+          ><a href="https://123movies-to.org"></a><br /><a
+            href="https://www.embedgooglemap.net"
+            >add google map to website</a
+          >
         </div>
-      </div>
+      </div> -->
+      <!-- <iframe
+        width="600"
+        height="450"
+        style="border:0"
+        loading="lazy"
+        allowfullscreen
+        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJrYVt2SrcvpUR5CLVBNuS9Nc&key=AIzaSyDVd8XejDcUIqB_ulOdykApvsDLyXaRsdw"
+      ></iframe> -->
       <br />
     </div>
     <Copyright />
@@ -66,7 +78,7 @@ export default Vue.extend({
 </script>
 
 <style>
-.mapouter {
+/* .mapouter {
   position: relative;
   text-align: right;
   height: 150px;
@@ -77,5 +89,5 @@ export default Vue.extend({
   background: none !important;
   height: 150px;
   width: 150px;
-}
+} */
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between">
+  <div class="flex justify-between bg-gray-200">
     <span class="w-auto">
       <p><i class="fas fa-phone-alt pr-2"></i>+54 2346 408639</p>
     </span>

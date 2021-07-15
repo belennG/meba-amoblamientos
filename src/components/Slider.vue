@@ -2,12 +2,7 @@
   <div>
     <transition-group name="fade" tag="div">
       <div v-for="i in [currentIndex]" :key="i" class="absolute">
-        <img
-          :src="currentImg"
-          id="main-image"
-          :width="width"
-          :height="height"
-        />
+        <img :src="currentImg" id="main-image" width="1400px" height="720px" />
       </div>
     </transition-group>
     <div class="buttons" v-if="showButtons">
@@ -39,14 +34,14 @@ export default Vue.extend({
       type: Array,
       required: true,
     },
-    width: {
-      type: String,
-      // required: true,
-    },
-    heigth: {
-      type: String,
-      // required: true,
-    },
+    // width: {
+    //   type: String,
+    //   // required: true,
+    // },
+    // heigth: {
+    //   type: String,
+    //   // required: true,
+    // },
   },
   data() {
     return {

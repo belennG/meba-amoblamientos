@@ -6,10 +6,15 @@
       :key="index"
     >
       <!-- <router-link :to="`/photo/${photo.id}`"> -->
-      <img :src="photo.image[0]" class="w-3/4 h-3/4 cover rounded-xl" />
+      <img :src="photo.image[0]" class="w-3/4 h-3/4 cover" />
       <!-- </router-link> -->
       <p>{{ photo.name }}</p>
       <p>{{ photo.provincia }}</p>
+    </div>
+    <div class="modal-window">
+      <div class="p-8 z-40 rounded shadow-xl bg-gray-50">
+        <Slider />
+      </div>
     </div>
   </div>
 </template>
