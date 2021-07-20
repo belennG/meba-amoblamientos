@@ -26,7 +26,8 @@
       <p>Sábado: 08:00 a 13:00</p>
       <br />
       <div class="locations">
-        <h1>OFICINAS</h1>
+        <h1 class="text-center">OFICINAS</h1>
+        <br />
         <p>Brandsen 142, Bragado 6640</p>
         <p>Umberto Illia 1342, Bragado 6640</p>
       </div>

@@ -2,7 +2,11 @@
   <div>
     <transition-group name="fade" tag="div">
       <div v-for="i in [currentIndex]" :key="i" class="absolute">
-        <img :src="currentImg" id="main-image" class="opacity-60" />
+        <img
+          :src="currentImg"
+          id="main-image"
+          class="opacity-60 object-contain"
+        />
       </div>
     </transition-group>
     <div class="buttons" v-if="showButtons">

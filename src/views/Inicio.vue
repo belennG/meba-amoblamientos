@@ -1,10 +1,12 @@
 <template>
   <div>
     <div class="h-screen w-screen">
-      <h1 class="z-40 absolute top-1/3 text-6xl text-hunter-green">
+      <h1 class="z-20 absolute top-1/3 text-hunter-green" style="font-size:4vw">
         Amoblamientos de Farmacia
       </h1>
-      <Slider :images="imagesAsData" :height="height" :width="width"></Slider>
+      <div class="slider-container w-full" style="height:1631px">
+        <Slider :images="imagesAsData"></Slider>
+      </div>
     </div>
     <div
       id="intro title"
@@ -43,10 +45,12 @@
         <img :src="Render1" alt="" class="w-100 h-80 mb-2 ml-2 grow" />
         <img :src="Render2" alt="" class="w-100 h-80 ml-2 grow" />
       </div>
-      <h1 class="text-3xl mx-2 flex h-screen items-center px-5 ">
-        Querés ver como quedará tu farmacia antes de tenerla? Render incluido en
-        todos los presupuestos!
-      </h1>
+      <div class="title">
+        <h1 class="text-3xl mx-2 flex h-screen items-center px-5 ">
+          Querés ver como quedará tu farmacia antes de tenerla? Render incluido
+          en todos los presupuestos!
+        </h1>
+      </div>
       <div class="render-fotos-der">
         <img :src="Render3" alt="" class="w-100 h-80 mb-2 ml-2 grow" />
         <img :src="Render4" alt="" class="w-100 h-80 mb-2 ml-2 grow" />
@@ -108,7 +112,7 @@ import MEBA9 from "@/assets/inicio-slider/MEBA9.jpeg";
 import MEBA13 from "@/assets/inicio-slider/MEBA13.jpeg";
 import MEBA14 from "@/assets/inicio-slider/MEBA14.jpeg";
 import MEBA15 from "@/assets/inicio-slider/MEBA15.jpeg";
-import MEBA16 from "@/assets/inicio-slider/MEBA16.jpeg";
+// import MEBA16 from "@/assets/inicio-slider/MEBA16.jpeg";
 import GralPico1 from "@/assets/farmacias/gralPico/GralPico1.jpeg";
 import GralPico2 from "@/assets/farmacias/gralPico/GralPico2.jpeg";
 import GralPico3 from "@/assets/farmacias/gralPico/GralPico3.jpeg";
@@ -161,7 +165,7 @@ export default Vue.extend({
         MEBA13,
         MEBA14,
         MEBA15,
-        MEBA16,
+        // MEBA16,
       ],
       Render1: Render1,
       Render2: Render2,
@@ -222,5 +226,16 @@ export default Vue.extend({
     "icons icons icons";
   grid-template-rows: 33% 33% 33%;
   grid-template-columns: 33% 33% 33%;
+}
+
+.height {
+  height: calc(100vh - 30px);
+}
+
+#render {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 2fr, 1fr, 2fr;
 }
 </style>

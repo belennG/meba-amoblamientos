@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="z-40">
     <!-- Start Desktop Navbar -->
     <nav
       id="navbar"
       :class="{ scrolled: !view.atTopOfPage }"
-      class="fixed bg-isabelline border-b justify-between p-5 m-auto animated flex w-full h-20"
+      class="fixed bg-isabelline border-b justify-between p-5 m-auto animated flex w-full h-20 z-40"
     >
       <router-link
         :to="{ name: 'Inicio' }"
@@ -139,9 +139,9 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-nav {
+/* nav {
   z-index: 10;
-}
+} */
 
 nav.scrolled {
   @apply shadow-2xl;

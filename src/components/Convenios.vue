@@ -55,10 +55,16 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-.router-link-container {
+/* .router-link-container {
   display: flex;
   justify-content: center;
   align-items: center;
+} */
+
+.router-link-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 1rem;
 }
 
 /* .height {
