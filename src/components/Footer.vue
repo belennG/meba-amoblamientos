@@ -1,5 +1,8 @@
 <template>
-  <div class="bg-gray-300 h-64 w-full grid grid-cols-3 px-2 py-2 text-sm">
+  <div
+    class="bg-isabelline h-64 w-full grid grid-cols-3 px-2 py-2 text-sm"
+    id="footer"
+  >
     <div class="flex flex-col items-center py-2 ">
       <h1>CONTACTO</h1>
       <br />
@@ -52,14 +55,15 @@
           >
         </div>
       </div> -->
-      <!-- <iframe
-        width="600"
-        height="450"
+      <iframe
+        width="150"
+        height="150"
+        zoom="15"
         style="border:0"
         loading="lazy"
         allowfullscreen
-        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJrYVt2SrcvpUR5CLVBNuS9Nc&key=AIzaSyDVd8XejDcUIqB_ulOdykApvsDLyXaRsdw"
-      ></iframe> -->
+        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJrYVt2SrcvpUR5CLVBNuS9Nc&key=AIzaSyA2K-vWkRjlLZh-dPefXpDFRL_wG-NFbj4"
+      ></iframe>
       <br />
     </div>
     <Copyright />

@@ -1,7 +1,8 @@
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
 
 @font-face {
   font-family: "Metropolis";
-  src: url(./fonts/metropolis-webfont.eot);
+  src: url("@/fonts/metropolis/webfonts/Metropolis-Black.eot");
 }

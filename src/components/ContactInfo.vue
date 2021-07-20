@@ -1,10 +1,13 @@
 <template>
-  <div class="flex justify-between bg-gray-200">
+  <div class="flex justify-between bg-gray-200 px-4">
     <span class="w-auto">
       <p><i class="fas fa-phone-alt pr-2"></i>+54 2346 408639</p>
     </span>
     <span class="flex justify-end">
-      <a href="amoblamientosmeba@hotmail.com" target="_blank" class="pr-2 pl-2"
+      <a
+        href=" mailto: amoblamientosmeba@hotmail.com"
+        target="_blank"
+        class="pr-2 pl-2"
         ><i class="far fa-envelope"></i
       ></a>
       <a

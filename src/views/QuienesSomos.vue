@@ -1,8 +1,10 @@
 <template>
-  <div class="h-screen w-screen bg-yellow-400 px-10 py-10">
+  <div
+    class="h-screen w-screen bg-almond text-blueish-text-color px-10 py-10 top-20 relative"
+  >
     <h1 class="text-6xl">Quienes Somos</h1>
-    <div class="">
-      <Slider :images="imagesAsData" width="600px" heigth="600px"></Slider>
+    <div class="flex">
+      <Slider :images="imagesAsData" :width="width" :heigth="height" />
       <div
         class="quienes-somos-texto w-1/3 h-1/3 absolute right-0 mx-24 my-24 text-2xl"
       >
@@ -30,6 +32,8 @@ import quienesSomos3 from "@/assets/quienes-somos/quienesSomos3.jpeg";
 export default Vue.extend({
   data() {
     return {
+      height: "100px",
+      width: "100px",
       imagesAsData: [quienesSomos1, quienesSomos2, quienesSomos3],
     };
   },
@@ -39,4 +43,8 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+.height {
+  height: calc(100vh - 104px);
+}
+</style>

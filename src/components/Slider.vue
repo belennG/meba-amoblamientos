@@ -2,7 +2,7 @@
   <div>
     <transition-group name="fade" tag="div">
       <div v-for="i in [currentIndex]" :key="i" class="absolute">
-        <img :src="currentImg" id="main-image" width="1400px" height="720px" />
+        <img :src="currentImg" id="main-image" class="opacity-60" />
       </div>
     </transition-group>
     <div class="buttons" v-if="showButtons">
@@ -34,14 +34,14 @@ export default Vue.extend({
       type: Array,
       required: true,
     },
-    // width: {
-    //   type: String,
-    //   // required: true,
-    // },
-    // heigth: {
-    //   type: String,
-    //   // required: true,
-    // },
+    width: {
+      type: String,
+      // required: true,
+    },
+    heigth: {
+      type: String,
+      // required: true,
+    },
   },
   data() {
     return {
@@ -57,7 +57,7 @@ export default Vue.extend({
 
   methods: {
     startSlide: function() {
-      this.timer = setInterval(this.next, 4000);
+      this.timer = setInterval(this.next, 40000);
     },
 
     next: function() {

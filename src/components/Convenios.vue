@@ -3,18 +3,22 @@
     <router-link
       :to="{ name: 'Contacto' }"
       class=" md:text-base hover:underline"
-      ><h1 class="font-semibold text-5xl text-center align-baseline mb-20">
+      ><h1
+        class="font-semibold text-5xl text-center text-almond align-baseline mb-20"
+      >
         Consulte por convenios en su provincia
       </h1></router-link
     >
 
     <div id="convenios" class="router-link-container inset-x-4">
       <div
-        class="border-2 w-72 h-80 mx-2 my-2 py-4 bg-yellow-200 rounded-lg"
+        class="border-2 w-72 h-80 mx-2 my-2 py-4 bg-isabelline rounded-lg"
         v-for="(convenio, index) in convenios"
         :key="index"
       >
-        <h1 class="flex items-center justify-center text-xl">
+        <h1
+          class="flex items-center justify-center text-xl text-blueish-text-color"
+        >
           {{ convenio.name }}
         </h1>
         <div class="flex items-center justify-center h-72">

@@ -4,7 +4,7 @@
     <nav
       id="navbar"
       :class="{ scrolled: !view.atTopOfPage }"
-      class="fixed bg-white border-b justify-between p-5 m-auto animated flex w-full h-20"
+      class="fixed bg-isabelline border-b justify-between p-5 m-auto animated flex w-full h-20"
     >
       <router-link
         :to="{ name: 'Inicio' }"
@@ -15,7 +15,7 @@
           alt="meba-logo"
           class="h-16 w-16 pl-2"
         />
-        <h1 class="text-black font-bold font-metropolis">
+        <h1 class="text-hunter-green font-bold font-metropolis">
           Amoblamientos MEBA
         </h1>
       </router-link>
@@ -28,7 +28,7 @@
         >
           <router-link
             :to="{ name: 'Inicio' }"
-            class="text-sm md:text-base top-12 font-metropolis"
+            class="text-sm md:text-base top-12 font-metropolis text-hunter-green"
             >INICIO</router-link
           >
         </div>
@@ -37,7 +37,7 @@
         >
           <router-link
             :to="{ name: 'QuienesSomos' }"
-            class="font-semibold text-sm md:text-base"
+            class="font-semibold text-sm md:text-base text-hunter-green"
             >QUIENES SOMOS</router-link
           >
         </div>
@@ -46,7 +46,7 @@
         >
           <router-link
             :to="{ name: 'NuestrosProyectos' }"
-            class=" font-semibold text-sm md:text-base"
+            class=" font-semibold text-sm md:text-base text-hunter-green"
             >NUESTROS PROYECTOS</router-link
           >
         </div>
@@ -55,7 +55,7 @@
         >
           <router-link
             :to="{ name: 'Contacto' }"
-            class=" font-semibold text-sm md:text-base"
+            class=" font-semibold text-sm md:text-base text-hunter-green"
             >CONTACTO</router-link
           >
         </div>

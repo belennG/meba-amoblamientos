@@ -1,33 +1,49 @@
 <template>
   <div>
     <div class="h-screen w-screen">
-      <h1 class="z-40 absolute top-1/3 text-6xl text-white">
+      <h1 class="z-40 absolute top-1/3 text-6xl text-hunter-green">
         Amoblamientos de Farmacia
       </h1>
-      <Slider :images="imagesAsData"></Slider>
+      <Slider :images="imagesAsData" :height="height" :width="width"></Slider>
     </div>
-    <div id="intro" class="h-screen w-screen bg-red-400 flex px-10 py-10">
-      <h1 class="flex items-center justify-center text-7xl ml-6">
+    <div
+      id="intro title"
+      class="h-screen w-screen bg-middle-red px-10 py-10 text-isabelline title"
+    >
+      <h1 class=" text-7xl ml-6 grid-in-header">
         ESTAMOS EN TODO EL PAÍS
       </h1>
       <p
-        class="flex items-center justify-center mr-20 ml-20 text-2xl font-metropolis"
+        id="paragraph"
+        class=" mr-20 ml-20 text-2xl font-metropolis grid-in-main paragraph"
       >
         Somos líderes en diseño y construcción de mobiliario para tu negocio -ya
         sea farmacia, consultorio, dietética, veterinaria, pet-shop,
         laboratorio. Su satisfación es lo más importante. Atención
         personalizada, trabajamos las 24 hs, los 365 días para Usted.
       </p>
+      <div
+        id="icons"
+        class="icons text-isabelline space-x-3 grid-in-footer flex"
+      >
+        <i class="fas fa-paw"></i>
+        <p>Pet Shops</p>
+        <i class="fas fa-clinic-medical"></i>
+        <p>Farmacias</p>
+        <i class="fas fa-user-md"></i>
+        <p>Consultorios médicos y laboratorios</p>
+        <i class="fas fa-stethoscope"></i>
+      </div>
     </div>
     <div
       id="render"
-      class="h-auto w-screen bg-yellow-400 px-10 py-6 grid grid-cols-3"
+      class="h-auto w-screen bg-green-sheen text-isabelline px-10 py-6 grid grid-cols-3"
     >
       <div class="render-fotos-izq">
         <img :src="Render1" alt="" class="w-100 h-80 mb-2 ml-2 grow" />
         <img :src="Render2" alt="" class="w-100 h-80 ml-2 grow" />
       </div>
-      <h1 class="text-3xl mx-2 flex h-screen items-center px-5">
+      <h1 class="text-3xl mx-2 flex h-screen items-center px-5 ">
         Querés ver como quedará tu farmacia antes de tenerla? Render incluido en
         todos los presupuestos!
       </h1>
@@ -36,7 +52,10 @@
         <img :src="Render4" alt="" class="w-100 h-80 mb-2 ml-2 grow" />
       </div>
     </div>
-    <div id="testimonials" class="h-screen w-screen bg-green-400">
+    <div
+      id="gallery"
+      class="px-4 py-4 w-screen bg-isabelline text-hunter-green"
+    >
       <!-- <Testimonials /> -->
       <!-- Why doesnt it take the height screen? -->
       <!-- <Farmacia
@@ -66,8 +85,11 @@
         :farmaciaUbicacion="'Farmacia Schneider, Provincia de Corrientes'"
       /> -->
       <Gallery />
+      <router-link :to="{ name: 'NuestrosProyectos' }">
+        <h1 class="text-5xl text-center">Ver más</h1>
+      </router-link>
     </div>
-    <div class="h-screen w-screen bg-pink-400 px-8 py-8">
+    <div class="h-screen w-screen bg-darkolive-green px-8 py-8">
       <Convenios />
     </div>
   </div>
@@ -129,6 +151,8 @@ import Gallery from "@/components/Gallery.vue";
 export default Vue.extend({
   data() {
     return {
+      width: "700px",
+      height: "1400px",
       imagesAsData: [
         MEBA2,
         MEBA4,
@@ -187,5 +211,16 @@ export default Vue.extend({
 
 .grow:hover {
   transform: scale(1.2);
+}
+
+#inicio {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas:
+    "title paragraph paragraph"
+    "icons icons icons";
+  grid-template-rows: 33% 33% 33%;
+  grid-template-columns: 33% 33% 33%;
 }
 </style>

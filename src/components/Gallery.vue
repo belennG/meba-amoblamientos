@@ -11,9 +11,14 @@
       <p>{{ photo.name }}</p>
       <p>{{ photo.provincia }}</p>
     </div>
+    <!-- Modal window -->
     <div class="modal-window">
-      <div class="p-8 z-40 rounded shadow-xl bg-gray-50">
-        <Slider />
+      <div
+        class="w-screen h-screen fixed inset-0 bg-black bg-opacity-20 grid justify-center items-center"
+        @click="showSlider"
+      >
+        <Slider :images="photo.image" />
+        <!-- Props with the photo.id & index of the photo ? -->
       </div>
     </div>
   </div>
@@ -62,9 +67,9 @@ import Schneider4 from "@/assets/farmacias/Schneider/Schneider4.jpeg";
 import Schneider5 from "@/assets/farmacias/Schneider/Schneider5.jpeg";
 
 export default Vue.extend({
-  //   methods: {
-  //     showPhoto() {},
-  //   },
+  // methods: {
+  //   showSlider(index) {},
+  // },
   components: {},
   name: "Gallery",
   data() {
