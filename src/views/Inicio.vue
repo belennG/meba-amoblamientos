@@ -12,18 +12,22 @@
       id="intro title"
       class="h-screen w-screen bg-middle-red px-10 py-10 text-isabelline title"
     >
-      <h1 class=" text-7xl ml-6 grid-in-header">
-        ESTAMOS EN TODO EL PAÍS
-      </h1>
-      <p
-        id="paragraph"
-        class=" mr-20 ml-20 text-2xl font-metropolis grid-in-main paragraph"
-      >
-        Somos líderes en diseño y construcción de mobiliario para tu negocio -ya
-        sea farmacia, consultorio, dietética, veterinaria, pet-shop,
-        laboratorio. Su satisfación es lo más importante. Atención
-        personalizada, trabajamos las 24 hs, los 365 días para Usted.
-      </p>
+      <div class="h1wrapper w-1/2">
+        <h1 class=" text-7xl ml-6 grid-in-header text-left relative top-1/2">
+          ESTAMOS EN TODO EL PAÍS
+        </h1>
+      </div>
+      <div class="paragraph-wrapper w-1/2 absolute right-0">
+        <p
+          id="paragraph"
+          class=" mr-20 ml-20 text-2xl font-metropolis grid-in-main paragraph text-right"
+        >
+          Somos líderes en diseño y construcción de mobiliario para tu negocio
+          -ya sea farmacia, consultorio, dietética, veterinaria, pet-shop,
+          laboratorio. Su satisfación es lo más importante. Atención
+          personalizada, trabajamos las 24 hs, los 365 días para Usted.
+        </p>
+      </div>
       <div
         id="icons"
         class="icons text-isabelline space-x-3 grid-in-footer flex"

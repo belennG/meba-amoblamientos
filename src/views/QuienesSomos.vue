@@ -1,14 +1,17 @@
 <template>
   <div
-    class="h-screen w-screen bg-almond text-blueish-text-color px-10 py-10 top-20 relative"
+    class="height w-screen bg-almond text-blueish-text-color px-10 py-10 top-20 relative"
+    id="quienes-somos"
   >
-    <h1 class="text-6xl">Quienes Somos</h1>
-    <div class="flex">
-      <Slider :images="imagesAsData" :width="width" :heigth="height" />
+    <h1 class="text-6xl title">Quienes Somos</h1>
+    <div class="">
+      <div class="slider-wrapper slider" style="height: 800px width:800px">
+        <Slider :images="imagesAsData" />
+      </div>
       <div
-        class="quienes-somos-texto w-1/3 h-1/3 absolute right-0 mx-24 my-24 text-2xl"
+        class="quienes-somos-texto w-1/3 h-1/3 absolute right-0 mx-24 my-24 text-2xl paragraph"
       >
-        <h2>
+        <h2 class="">
           Somos una empresa familiar con mas de quince años de trayectoria
           ayudandote a crear el sueño de tu farmacia perfecta. Desarrollamos
           proyectos integrales, poniendo pasión por nuestro trabajo. Partimos de
@@ -46,5 +49,15 @@ export default Vue.extend({
 <style scoped>
 .height {
   height: calc(100vh - 104px);
+}
+
+#quienes-somos {
+  display: grid;
+  grid-template-areas:
+    "title title title title"
+    "slider slider paragraph paragraph"
+    "slider slider paragraph paragraph"
+    "slider slider paragraph paragraph"
+    "slider slider paragraph paragraph";
 }
 </style>
