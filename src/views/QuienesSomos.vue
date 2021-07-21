@@ -1,26 +1,26 @@
 <template>
   <div
-    class="height w-full bg-almond text-blueish-text-color px-10 py-10 top-20 relative"
+    class="height pt-40 w-full h-auto bg-almond text-blueish-text-color relative"
     id="quienes-somos"
   >
-    <h1 class="text-6xl title">Quienes Somos</h1>
-    <div class="">
-      <div class="slider-wrapper slider" style="height: 800px width:800px">
+    <!-- <h1 class="text-6xl title fixed top-1/6">Quienes Somos</h1> -->
+    <div class="w-2/3 absolute left-0">
+      <div class="slider-wrapper slider" style="height:100px width:100px">
         <Slider :images="imagesAsData" />
       </div>
-      <div
-        class="quienes-somos-texto w-1/3 h-1/3 absolute right-0 mx-24 my-24 text-2xl paragraph"
-      >
-        <h2 class="">
-          Somos una empresa familiar con mas de quince años de trayectoria
-          ayudandote a crear el sueño de tu farmacia perfecta. Desarrollamos
-          proyectos integrales, poniendo pasión por nuestro trabajo. Partimos de
-          un sueño. El suyo. Aplicamos tecnología en todos los procesos para
-          hacerlo realidad. Sabemos del esfuerzo y el compromiso de cada uno de
-          nuestros clientes. Admiramos su dedicación y valoramos su confianza.
-          Brindamos soluciones. Esa es nuestra esencia. Estamos para vos.
-        </h2>
-      </div>
+    </div>
+    <div
+      class="quienes-somos-texto absolute right-0 text-justify text-2xl float-right"
+    >
+      <h2 class="">
+        Somos una empresa familiar con mas de quince años de trayectoria
+        ayudandote a crear el sueño de tu farmacia perfecta. Desarrollamos
+        proyectos integrales, poniendo pasión por nuestro trabajo. Partimos de
+        un sueño. El suyo. Aplicamos tecnología en todos los procesos para
+        hacerlo realidad. Sabemos del esfuerzo y el compromiso de cada uno de
+        nuestros clientes. Admiramos su dedicación y valoramos su confianza.
+        Brindamos soluciones. Esa es nuestra esencia. Estamos para vos.
+      </h2>
     </div>
   </div>
 </template>
@@ -51,7 +51,7 @@ export default Vue.extend({
   height: calc(100vh - 104px);
 }
 
-#quienes-somos {
+/* #quienes-somos {
   display: grid;
   grid-template-areas:
     "title title title title"
@@ -61,5 +61,5 @@ export default Vue.extend({
     "slider slider paragraph paragraph";
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: 1/2fr, 1fr 1fr 1fr 1fr;
-}
+} */
 </style>

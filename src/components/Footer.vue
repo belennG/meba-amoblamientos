@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-isabelline h-64 w-full grid grid-cols-3 px-2 py-2 text-sm absolute"
+    class="bg-isabelline h-64 w-full grid grid-cols-3 px-2 py-2 text-sm"
     id="footer"
   >
     <div class="flex flex-col items-center py-2 ">

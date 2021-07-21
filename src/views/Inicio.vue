@@ -1,11 +1,14 @@
 <template>
   <div>
     <div class="h-screen w-screen">
-      <h1 class="z-20 absolute top-1/3 text-hunter-green" style="font-size:4vw">
+      <h1
+        class="z-20 absolute top-1/3 left-6 text-hunter-green"
+        style="font-size:4vw"
+      >
         Amoblamientos de Farmacia
       </h1>
-      <div class="slider-container w-full" style="height:1631px">
-        <Slider :images="imagesAsData"></Slider>
+      <div class="slider-container w-full object-cover" style="height:1631px">
+        <Slider :images="imagesAsData" class="object-cover"></Slider>
       </div>
     </div>
     <div
@@ -104,7 +107,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from "vue";
 import Render1 from "@/assets/render/Render1.jpeg";
 import Render2 from "@/assets/render/Render2.jpeg";
