@@ -2,14 +2,16 @@ module.exports = {
   purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    gridTemplateAreas: {
-      layout: ["header header main main", "footer footer footer footer"],
-    },
+    // {
+    //   gridTemplateAreas: {
+    //     layout: ["header header main main", "footer footer footer footer"],
+    //   },
     extend: {
       fontFamily: {
         rubik: ["rubik", "sans-serif"],
         inconsolata: ["inconsolata", "sans-serif"],
         metropolis: ["metropolis", "sans-serif"],
+        test: ["dancingScript"],
       },
       colors: {
         "hunter-green": "#3E563C",

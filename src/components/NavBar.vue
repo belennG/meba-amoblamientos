@@ -33,11 +33,11 @@
           >
         </div>
         <div
-          class="w-16 h-16 hover:text-gray-700 hover:underlinetext-black flex router-link-container"
+          class="w-16 h-16 hover:text-gray-700 hover:underline text-black flex router-link-container"
         >
           <router-link
             :to="{ name: 'QuienesSomos' }"
-            class="font-semibold text-sm md:text-base text-hunter-green"
+            class=" text-sm md:text-base text-hunter-green"
             >QUIENES SOMOS</router-link
           >
         </div>
@@ -46,7 +46,7 @@
         >
           <router-link
             :to="{ name: 'NuestrosProyectos' }"
-            class=" font-semibold text-sm md:text-base text-hunter-green"
+            class=" text-sm md:text-base text-hunter-green"
             >NUESTROS PROYECTOS</router-link
           >
         </div>
@@ -55,7 +55,7 @@
         >
           <router-link
             :to="{ name: 'Contacto' }"
-            class=" font-semibold text-sm md:text-base text-hunter-green"
+            class=" text-sm md:text-base text-hunter-green"
             >CONTACTO</router-link
           >
         </div>

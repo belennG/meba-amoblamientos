@@ -23,6 +23,6 @@ export default {
 
 <style>
 body {
-  font-family: "Metropolis-Medium";
+  font-family: "test";
 }
 </style>

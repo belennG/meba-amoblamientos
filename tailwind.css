@@ -4,5 +4,10 @@
 
 @font-face {
   font-family: "Metropolis";
-  src: url("@/fonts/metropolis/webfonts/Metropolis-Black.eot");
+  src: url("@/fonts/metropolis/webfonts/Metropolis-Light.eot");
+}
+
+@font-face {
+  font-family: "dancingScript";
+  src: url("@/fonts/dancingScript/static/DancingScript-Bold.ttf");
 }
