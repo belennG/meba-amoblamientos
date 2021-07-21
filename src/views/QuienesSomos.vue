@@ -1,6 +1,6 @@
 <template>
   <div
-    class="height w-screen bg-almond text-blueish-text-color px-10 py-10 top-20 relative"
+    class="height w-full bg-almond text-blueish-text-color px-10 py-10 top-20 relative"
     id="quienes-somos"
   >
     <h1 class="text-6xl title">Quienes Somos</h1>
@@ -59,5 +59,7 @@ export default Vue.extend({
     "slider slider paragraph paragraph"
     "slider slider paragraph paragraph"
     "slider slider paragraph paragraph";
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1/2fr, 1fr 1fr 1fr 1fr;
 }
 </style>

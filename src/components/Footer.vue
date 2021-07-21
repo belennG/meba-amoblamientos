@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-isabelline h-64 w-full grid grid-cols-3 px-2 py-2 text-sm"
+    class="bg-isabelline h-64 w-full grid grid-cols-3 px-2 py-2 text-sm absolute"
     id="footer"
   >
     <div class="flex flex-col items-center py-2 ">
@@ -24,6 +24,7 @@
       <br />
       <p>Lunes - Viernes 08:00 a 18:00</p>
       <p>Sábado: 08:00 a 13:00</p>
+      <br />
       <br />
       <div class="locations">
         <h1 class="text-center">OFICINAS</h1>

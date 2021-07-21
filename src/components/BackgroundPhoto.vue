@@ -5,7 +5,7 @@
       alt=""
       class="opacity-40 absolute inset-0 object-cover z-0 h-screen w-screen"
     />
-    <div class="z-80 absolute">
+    <div class="z-80 absolute w-full">
       <slot></slot>
     </div>
   </div>

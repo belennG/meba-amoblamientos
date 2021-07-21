@@ -10,17 +10,17 @@
     </div>
     <div
       id="intro title"
-      class="h-screen w-screen bg-middle-red px-10 py-10 text-isabelline title"
+      class="h-screen w-screen bg-middle-red px-10 py-10 text-isabelline title relative"
     >
-      <div class="h1wrapper w-1/2">
-        <h1 class=" text-7xl ml-6 grid-in-header text-left relative top-1/2">
+      <div class="h1wrapper w-1/2 absolute top-1/4">
+        <h1 class=" text-7xl ml-6 grid-in-header text-left">
           ESTAMOS EN TODO EL PAÍS
         </h1>
       </div>
-      <div class="paragraph-wrapper w-1/2 absolute right-0">
+      <div class="paragraph-wrapper w-1/2 absolute top-1/4 right-0">
         <p
           id="paragraph"
-          class=" mr-20 ml-20 text-2xl font-metropolis grid-in-main paragraph text-right"
+          class=" mr-20 ml-20 text-2xl font-metropolis grid-in-main paragraph text-right text-justify"
         >
           Somos líderes en diseño y construcción de mobiliario para tu negocio
           -ya sea farmacia, consultorio, dietética, veterinaria, pet-shop,
@@ -30,15 +30,16 @@
       </div>
       <div
         id="icons"
-        class="icons text-isabelline space-x-3 grid-in-footer flex"
+        class="icons text-isabelline space-x-3 grid-in-footer flex flex-wrap absolute bottom-1/3 left-72 mt-14"
       >
-        <i class="fas fa-paw"></i>
-        <p>Pet Shops</p>
-        <i class="fas fa-clinic-medical"></i>
-        <p>Farmacias</p>
-        <i class="fas fa-user-md"></i>
-        <p>Consultorios médicos y laboratorios</p>
-        <i class="fas fa-stethoscope"></i>
+        <i class="fas fa-paw fa-3x"></i>
+        <p class="text-2xl">Pet Shops</p>
+        <i class="fas fa-clinic-medical fa-3x"></i>
+        <p class="text-2xl">Farmacias</p>
+        <i class="fas fa-user-md fa-3x"></i>
+        <p class="text-2xl">Consultorios médicos</p>
+        <i class="fas fa-stethoscope fa-3x"></i>
+        <p class="text-2xl">Laboratorios</p>
       </div>
     </div>
     <div
@@ -221,7 +222,7 @@ export default Vue.extend({
   transform: scale(1.2);
 }
 
-#inicio {
+/* #inicio {
   display: grid;
   width: 100%;
   height: 100%;
@@ -230,7 +231,7 @@ export default Vue.extend({
     "icons icons icons";
   grid-template-rows: 33% 33% 33%;
   grid-template-columns: 33% 33% 33%;
-}
+} */
 
 .height {
   height: calc(100vh - 30px);
