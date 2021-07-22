@@ -4,7 +4,7 @@
     <nav
       id="navbar"
       :class="{ scrolled: !view.atTopOfPage }"
-      class="fixed bg-isabelline border-b justify-between p-5 m-auto animated flex w-full h-20 z-40"
+      class="fixed bg-isabelline border-b justify-between p-5 m-auto animated flex w-auto md:w-full h-20 z-40"
     >
       <router-link
         :to="{ name: 'Inicio' }"
@@ -46,7 +46,7 @@
         >
           <router-link
             :to="{ name: 'NuestrosProyectos' }"
-            class=" text-sm md:text-base text-hunter-green"
+            class=" font-semibold text-sm md:text-base text-hunter-green"
             >NUESTROS PROYECTOS</router-link
           >
         </div>
@@ -55,7 +55,7 @@
         >
           <router-link
             :to="{ name: 'Contacto' }"
-            class=" text-sm md:text-base text-hunter-green"
+            class=" font-semibold text-sm md:text-base text-hunter-green"
             >CONTACTO</router-link
           >
         </div>

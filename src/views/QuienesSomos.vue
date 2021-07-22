@@ -4,15 +4,15 @@
     id="quienes-somos"
   >
     <h1 class="text-6xl title mb-6 mx-4">Quienes Somos</h1>
-    <div class="grid grid-cols-3">
+    <div class="grid grid-cols-5">
       <div
-        class="slider-wrapper slider col-span-3 lg:col-span-2"
+        class="slider-wrapper slider col-span-2 lg:col-span-3"
         style="min-height: 50vh"
       >
         <Slider :images="imagesAsData" />
       </div>
       <div
-        class="quienes-somos-texto col-span-3 lg:col-span-1 text-justify text-2xl mb-4 mx-2"
+        class="quienes-somos-texto col-span-1 lg:col-span-2 text-justify text-2xl mb-4 mx-2"
       >
         <h2 class="">
           Somos una empresa familiar con mas de quince años de trayectoria

@@ -1,31 +1,34 @@
 <template>
-  <div class="py-14">
+  <div class="lg:py-14 py-2">
     <router-link
       :to="{ name: 'Contacto' }"
       class=" md:text-base hover:underline"
       ><h1
-        class="font-semibold text-5xl text-center text-almond align-baseline mb-20"
+        class="font-semibold text-lg md:text-4xl lg:text-5xl text-center text-almond align-baseline mb-5 md:mb-10 lg:mb-20"
       >
         Consulte por convenios en su provincia
       </h1></router-link
     >
 
-    <div id="convenios" class="router-link-container inset-x-4">
+    <div
+      id="convenios"
+      class="w-auto md:px-32 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-x-10 mx-auto"
+    >
       <div
-        class="border-2 w-72 h-80 mx-2 my-2 py-4 bg-isabelline rounded-lg"
+        class="border-2 w-32 h-34 my-1 py-1 px-1 md:w-56 md:h-56 lg:w-72 lg:h-80 md:mx-2 md:my-2 md:py-8 bg-isabelline rounded-lg col-span-1 mx-auto"
         v-for="(convenio, index) in convenios"
         :key="index"
       >
         <h1
-          class="flex items-center justify-center text-xl text-blueish-text-color"
+          class="flex items-center justify-center text-xs md:text-xl text-blueish-text-color text-center"
         >
           {{ convenio.name }}
         </h1>
-        <div class="flex items-center justify-center h-72">
+        <div class="flex items-center justify-center h-20 md:h-40 lg:h-72">
           <img
             :src="convenio.image"
             :alt="convenio.name"
-            class="w-52 h-52 rounded-3xl"
+            class="w-16 h-16 md:w-32 md:h-32 lg:w-52 lg:h-52 rounded-3xl"
           />
         </div>
       </div>
@@ -45,7 +48,7 @@ export default Vue.extend({
     return {
       convenios: [
         { name: "Provincia de Misiones", image: colegioMisiones },
-        { name: "Provincia de Buenos Aires", image: colegioBsAs },
+        { name: "Provincia de Bs As", image: colegioBsAs },
         { name: "Provincia de San Luis", image: colegioSanLuis },
         { name: "Provincia de Córdoba", image: colegioCordoba },
       ],
@@ -60,12 +63,6 @@ export default Vue.extend({
   justify-content: center;
   align-items: center;
 } */
-
-.router-link-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-gap: 1rem;
-}
 
 /* .height {
   height: calc(100vh - 30px);

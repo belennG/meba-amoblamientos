@@ -99,7 +99,9 @@
         <h1 class="text-5xl text-center">Ver más</h1>
       </router-link>
     </div>
-    <div class="h-screen w-screen bg-darkolive-green px-8 py-8">
+    <div
+      class=" h-auto w-auto lg:h-screen lg:w-screen bg-darkolive-green px-2 py-8"
+    >
       <Convenios />
     </div>
   </div>

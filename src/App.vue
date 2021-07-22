@@ -9,6 +9,7 @@
 
 <script>
 import NavBar from "@/components/NavBar.vue";
+
 import ContactInfo from "@/components/ContactInfo.vue";
 import Footer from "@/components/Footer.vue";
 export default {
