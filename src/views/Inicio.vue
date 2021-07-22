@@ -48,8 +48,8 @@
       class="h-auto w-screen bg-green-sheen text-isabelline px-10 py-6 grid grid-cols-3"
     >
       <div class="render-fotos-izq">
-        <img :src="Render1" alt="" class="w-100 h-80 mb-2 ml-2 grow" />
-        <img :src="Render2" alt="" class="w-100 h-80 ml-2 grow" />
+        <img :src="render.Render1" alt="" class="w-100 h-80 mb-2 ml-2 grow" />
+        <img :src="render.Render2" alt="" class="w-100 h-80 ml-2 grow" />
       </div>
       <div class="title">
         <h1 class="text-3xl mx-2 flex h-screen items-center px-5 ">
@@ -58,8 +58,8 @@
         </h1>
       </div>
       <div class="render-fotos-der">
-        <img :src="Render3" alt="" class="w-100 h-80 mb-2 ml-2 grow" />
-        <img :src="Render4" alt="" class="w-100 h-80 mb-2 ml-2 grow" />
+        <img :src="render.Render3" alt="" class="w-100 h-80 mb-2 ml-2 grow" />
+        <img :src="render.Render4" alt="" class="w-100 h-80 mb-2 ml-2 grow" />
       </div>
     </div>
     <div
@@ -107,55 +107,12 @@
 
 <script>
 import Vue from "vue";
-import Render1 from "@/assets/render/Render1.jpeg";
-import Render2 from "@/assets/render/Render2.jpeg";
-import Render3 from "@/assets/render/Render3.jpeg";
-import Render4 from "@/assets/render/Render4.jpeg";
-import MEBA2 from "@/assets/inicio-slider/MEBA2.jpeg";
-import MEBA4 from "@/assets/inicio-slider/MEBA4.jpeg";
-import MEBA5 from "@/assets/inicio-slider/MEBA5.jpeg";
-import MEBA9 from "@/assets/inicio-slider/MEBA9.jpeg";
-import MEBA13 from "@/assets/inicio-slider/MEBA13.jpeg";
-import MEBA14 from "@/assets/inicio-slider/MEBA14.jpeg";
-import MEBA15 from "@/assets/inicio-slider/MEBA15.jpeg";
-// import MEBA16 from "@/assets/inicio-slider/MEBA16.jpeg";
-import GralPico1 from "@/assets/farmacias/gralPico/GralPico1.jpeg";
-import GralPico2 from "@/assets/farmacias/gralPico/GralPico2.jpeg";
-import GralPico3 from "@/assets/farmacias/gralPico/GralPico3.jpeg";
-import GralPico4 from "@/assets/farmacias/gralPico/GralPico4.jpeg";
-
-import Firmat1 from "@/assets/farmacias/Firmat/Firmat1.jpeg";
-import Firmat2 from "@/assets/farmacias/Firmat/Firmat2.jpeg";
-import Firmat3 from "@/assets/farmacias/Firmat/Firmat3.jpeg";
-import Firmat4 from "@/assets/farmacias/Firmat/Firmat4.jpeg";
-import Firmat5 from "@/assets/farmacias/Firmat/Firmat5.jpeg";
-
-import Irma1 from "@/assets/farmacias/Irma/Irma1.jpeg";
-import Irma2 from "@/assets/farmacias/Irma/Irma2.jpeg";
-import Irma3 from "@/assets/farmacias/Irma/Irma3.jpeg";
-
-import MorenaJorge1 from "@/assets/farmacias/MorenaJorge/MorenaJorge1.jpeg";
-import MorenaJorge2 from "@/assets/farmacias/MorenaJorge/MorenaJorge2.jpeg";
-import MorenaJorge3 from "@/assets/farmacias/MorenaJorge/MorenaJorge3.jpeg";
-import MorenaJorge4 from "@/assets/farmacias/MorenaJorge/MorenaJorge4.jpeg";
-
-import Rivadavia1 from "@/assets/farmacias/Rivadavia/Rivadavia1.jpeg";
-import Rivadavia2 from "@/assets/farmacias/Rivadavia/Rivadavia2.jpeg";
-import Rivadavia3 from "@/assets/farmacias/Rivadavia/Rivadavia3.jpeg";
-import Rivadavia4 from "@/assets/farmacias/Rivadavia/Rivadavia4.jpeg";
-import Rivadavia5 from "@/assets/farmacias/Rivadavia/Rivadavia5.jpeg";
-
-import Schneider1 from "@/assets/farmacias/Schneider/Schneider1.jpeg";
-import Schneider2 from "@/assets/farmacias/Schneider/Schneider2.jpeg";
-import Schneider3 from "@/assets/farmacias/Schneider/Schneider3.jpeg";
-import Schneider4 from "@/assets/farmacias/Schneider/Schneider4.jpeg";
-import Schneider5 from "@/assets/farmacias/Schneider/Schneider5.jpeg";
+import { Render, MEBA } from "../photos";
 
 import Slider from "@/components/Slider.vue";
-// import Testimonials from "@/components/Testimonials.vue";
 import Convenios from "@/components/Convenios.vue";
 // import Farmacia from "@/components/Farmacia.vue";
-// import FarmaciaGallery from "@/components/FarmaciaGallery.vue";
+
 import Gallery from "@/components/Gallery.vue";
 
 export default Vue.extend({
@@ -163,52 +120,16 @@ export default Vue.extend({
     return {
       width: "700px",
       height: "1400px",
-      imagesAsData: [
-        MEBA2,
-        MEBA4,
-        MEBA5,
-        MEBA9,
-        MEBA13,
-        MEBA14,
-        MEBA15,
-        // MEBA16,
-      ],
-      Render1: Render1,
-      Render2: Render2,
-      Render3: Render3,
-      Render4: Render4,
-      fotosGralPico: [GralPico1, GralPico2, GralPico3, GralPico4],
-      fotosFirmat: [Firmat1, Firmat2, Firmat3, Firmat4, Firmat5],
-      fotosIrma: [Irma1, Irma2, Irma3],
-      fotosMorenaJorge: [
-        MorenaJorge1,
-        MorenaJorge2,
-        MorenaJorge3,
-        MorenaJorge4,
-      ],
-      fotosRivadavia: [
-        Rivadavia1,
-        Rivadavia2,
-        Rivadavia3,
-        Rivadavia4,
-        Rivadavia5,
-      ],
-      fotosSchneider: [
-        Schneider1,
-        Schneider2,
-        Schneider3,
-        Schneider4,
-        Schneider5,
-      ],
+      imagesAsData: MEBA,
+      render: Render,
+
       displayFarmacia: false,
     };
   },
   components: {
     Slider,
-    // Testimonials,
     Convenios,
     // Farmacia,
-    // FarmaciaGallery,
     Gallery,
   },
 });

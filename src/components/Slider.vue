@@ -61,7 +61,7 @@ export default Vue.extend({
 
   methods: {
     startSlide: function() {
-      //this.timer = setInterval(this.next, 4000);
+      this.timer = setInterval(this.next, 4000);
     },
 
     next: function() {

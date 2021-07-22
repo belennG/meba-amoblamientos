@@ -9,7 +9,7 @@
         class="slider-wrapper slider col-span-3 lg:col-span-2"
         style="min-height: 50vh"
       >
-        <Slider :images="imagesAsData" />
+        <Slider :images="quienesSomos" />
       </div>
       <div
         class="quienes-somos-texto col-span-3 lg:col-span-1 text-justify text-2xl mb-4 mx-2"
@@ -31,16 +31,14 @@
 <script lang="ts">
 import Vue from "vue";
 import Slider from "@/components/Slider.vue";
-import quienesSomos1 from "@/assets/quienes-somos/quienesSomos1.jpeg";
-import quienesSomos2 from "@/assets/quienes-somos/quienesSomos2.jpeg";
-import quienesSomos3 from "@/assets/quienes-somos/quienesSomos3.jpeg";
+import { quienesSomos } from "../photos";
 
 export default Vue.extend({
   data() {
     return {
       height: "100px",
       width: "100px",
-      imagesAsData: [quienesSomos1, quienesSomos2, quienesSomos3],
+      quienesSomos: quienesSomos,
     };
   },
   components: {

@@ -90,7 +90,6 @@
 import Vue from "vue";
 import BackgroundPhoto from "@/components/BackgroundPhoto.vue";
 import VueFaqAccordion from "vue-faq-accordion";
-// import PreguntaFrecuente from "@/components/PreguntaFrecuente.vue";
 
 export default Vue.extend({
   data() {
@@ -164,7 +163,6 @@ export default Vue.extend({
   components: {
     BackgroundPhoto,
     VueFaqAccordion,
-    // PreguntaFrecuente,
   },
   /**
    * Color for hover and active tab/question
