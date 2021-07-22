@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class="h-full relative">
     <transition-group name="fade" tag="div">
-      <div v-for="i in [currentIndex]" :key="i" class="absolute">
+      <div v-for="i in [currentIndex]" :key="i" class="absolute h-full w-full">
         <img
           :src="currentImg"
           id="main-image"
-          class="opacity-60 object-contain"
+          class="object-cover h-full w-full"
         />
       </div>
     </transition-group>
@@ -50,7 +50,7 @@ export default Vue.extend({
   data() {
     return {
       timer: null,
-      currentIndex: 0,
+      currentIndex: 2,
       imagesAsData: this.images,
       showButtons: false,
     };
@@ -61,7 +61,7 @@ export default Vue.extend({
 
   methods: {
     startSlide: function() {
-      this.timer = setInterval(this.next, 4000);
+      //this.timer = setInterval(this.next, 4000);
     },
 
     next: function() {

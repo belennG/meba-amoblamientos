@@ -12,6 +12,7 @@ module.exports = {
         inconsolata: ["inconsolata", "sans-serif"],
         metropolis: ["metropolis", "sans-serif"],
         test: ["dancingScript"],
+        sans: ["Metropolis", "sans-serif"],
       },
       colors: {
         "hunter-green": "#3E563C",

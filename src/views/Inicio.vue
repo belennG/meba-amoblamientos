@@ -1,15 +1,13 @@
 <template>
   <div>
-    <div class="h-screen w-screen">
+    <div style="height: calc(100vh - 104px); margin-top: 80px;">
       <h1
         class="z-20 absolute top-1/3 left-6 text-hunter-green"
         style="font-size:4vw"
       >
         Amoblamientos de Farmacia
       </h1>
-      <div class="slider-container w-full object-cover" style="height:1631px">
-        <Slider :images="imagesAsData" class="object-cover"></Slider>
-      </div>
+      <Slider :images="imagesAsData"></Slider>
     </div>
     <div
       id="intro title"

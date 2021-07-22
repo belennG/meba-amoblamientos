@@ -2,14 +2,14 @@
   <div class="gallery-wrapper height relative px-4 py-4">
     <h1>Nuestros Proyectos</h1>
     <div class="">
-      <!-- <Gallery /> -->
+      <Gallery />
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-// import Gallery from "@/components/Gallery.vue";
+import Gallery from "@/components/Gallery.vue";
 
 import Firmat from "@/assets/farmacias/Thumbnails/Firmat.jpeg";
 import GralPico from "@/assets/farmacias/Thumbnails/GralPico.jpeg";
@@ -44,11 +44,11 @@ import Rivadavia3 from "@/assets/farmacias/Rivadavia/Rivadavia3.jpeg";
 import Rivadavia4 from "@/assets/farmacias/Rivadavia/Rivadavia4.jpeg";
 import Rivadavia5 from "@/assets/farmacias/Rivadavia/Rivadavia5.jpeg";
 
-// import Schneider1 from "@/assets/farmacias/Schneider/Schneider1.jpeg";
-// import Schneider2 from "@/assets/farmacias/Schneider/Schneider2.jpeg";
-// import Schneider3 from "@/assets/farmacias/Schneider/Schneider3.jpeg";
-// import Schneider4 from "@/assets/farmacias/Schneider/Schneider4.jpeg";
-// import Schneider5 from "@/assets/farmacias/Schneider/Schneider5.jpeg";
+import Schneider1 from "@/assets/farmacias/Schneider/Schneider1.jpeg";
+import Schneider2 from "@/assets/farmacias/Schneider/Schneider2.jpeg";
+import Schneider3 from "@/assets/farmacias/Schneider/Schneider3.jpeg";
+import Schneider4 from "@/assets/farmacias/Schneider/Schneider4.jpeg";
+import Schneider5 from "@/assets/farmacias/Schneider/Schneider5.jpeg";
 
 export default Vue.extend({
   data() {
@@ -97,24 +97,24 @@ export default Vue.extend({
             Rivadavia5,
           ],
         },
-        // {
-        //   id: 5,
-        //   name: "Farmacia Schneider",
-        //   provincia: "Provincia de Corrientes",
-        //   image: [
-        //     Schneider,
-        //     Schneider1,
-        //     Schneider2,
-        //     Schneider3,
-        //     Schneider4,
-        //     Schneider5,
-        //   ],
-        // },
+        {
+          id: 5,
+          name: "Farmacia Schneider",
+          provincia: "Provincia de Corrientes",
+          image: [
+            Schneider,
+            Schneider1,
+            Schneider2,
+            Schneider3,
+            Schneider4,
+            Schneider5,
+          ],
+        },
       ],
     };
   },
   components: {
-    // Gallery,
+    Gallery,
   },
 });
 </script>
