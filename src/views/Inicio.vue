@@ -48,8 +48,8 @@
       class="h-auto w-screen bg-green-sheen text-isabelline px-10 py-6 grid grid-cols-3"
     >
       <div class="render-fotos-izq">
-        <img :src="render.Render1" alt="" class="w-100 h-80 mb-2 ml-2 grow" />
-        <img :src="render.Render2" alt="" class="w-100 h-80 ml-2 grow" />
+        <img :src="render[0]" alt="" class="w-100 h-80 mb-2 ml-2 grow" />
+        <img :src="render[1]" alt="" class="w-100 h-80 ml-2 grow" />
       </div>
       <div class="title">
         <h1 class="text-3xl mx-2 flex h-screen items-center px-5 ">
@@ -58,8 +58,8 @@
         </h1>
       </div>
       <div class="render-fotos-der">
-        <img :src="render.Render3" alt="" class="w-100 h-80 mb-2 ml-2 grow" />
-        <img :src="render.Render4" alt="" class="w-100 h-80 mb-2 ml-2 grow" />
+        <img :src="render[2]" alt="" class="w-100 h-80 mb-2 ml-2 grow" />
+        <img :src="render[3]" alt="" class="w-100 h-80 mb-2 ml-2 grow" />
       </div>
     </div>
     <div
