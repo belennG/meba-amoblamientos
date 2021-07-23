@@ -2,10 +2,6 @@ module.exports = {
   purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    // {
-    //   gridTemplateAreas: {
-    //     layout: ["header header main main", "footer footer footer footer"],
-    //   },
     extend: {
       fontFamily: {
         rubik: ["rubik", "sans-serif"],

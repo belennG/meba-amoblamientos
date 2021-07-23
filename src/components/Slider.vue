@@ -5,7 +5,7 @@
         <img
           :src="currentImg"
           id="main-image"
-          class="object-cover h-full w-full"
+          class="object-cover h-full w-full opacity-60"
         />
       </div>
     </transition-group>
@@ -38,14 +38,10 @@ export default Vue.extend({
       type: Array,
       required: true,
     },
-    width: {
-      type: String,
-      // required: true,
-    },
-    heigth: {
-      type: String,
-      // required: true,
-    },
+    // opacity: {
+    //   type: String,
+    //   required: true,
+    // }
   },
   data() {
     return {
@@ -61,7 +57,7 @@ export default Vue.extend({
 
   methods: {
     startSlide: function() {
-      this.timer = setInterval(this.next, 40000);
+      this.timer = setInterval(this.next, 4000);
     },
 
     next: function() {

@@ -1,19 +1,21 @@
 <template>
-  <div class="gallery px-2 py-2 grid grid-cols-3">
+  <div class="gallery px-2 py-2 grid grid-cols-3 space-x-1 lg:py-12">
     <div
-      class="gallery-panel flex flex-col items-center justify-center grow hover:cursor-pointer"
+      class="gallery-panel flex flex-col items-center grow hover:cursor-pointer space-y-2"
       v-for="(photo, index) in photos"
       :key="index"
     >
-      <!-- <router-link :to="`/photo/${photo.id}`"> -->
       <img
         :src="photo.image[0]"
-        class="w-3/4 h-3/4 cover"
+        class="w-28 h-28 md:w-52 md:h-52 lg:w-80 lg:h-80 cover"
         @click="showSlider(index)"
       />
-      <!-- </router-link> -->
-      <p>{{ photo.name }}</p>
-      <p>{{ photo.provincia }}</p>
+      <span class="description">
+        <p class="text-xs md:text-2xl text-center">{{ photo.name }}</p>
+        <p class="text-xs text-center md:text-2xl mb-2 lg:mb-5">
+          {{ photo.provincia }}
+        </p>
+      </span>
     </div>
     <!-- Modal window -->
     <div

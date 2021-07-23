@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-isabelline h-64 w-full grid grid-cols-3 px-2 py-2 text-sm"
+    class="bg-isabelline h-auto md:h-64 w-full grid grid-cols-1 md:grid-cols-3 px-2 py-2 text-xs md:text-sm"
     id="footer"
   >
     <div class="flex flex-col items-center py-2 ">
@@ -25,7 +25,6 @@
       <p>Lunes - Viernes 08:00 a 18:00</p>
       <p>Sábado: 08:00 a 13:00</p>
       <br />
-      <br />
       <div class="locations">
         <h1 class="text-center">OFICINAS</h1>
         <br />
@@ -39,24 +38,6 @@
     >
       <h1>AQUÍ ESTAMOS</h1>
       <br />
-      <!-- <div class="mapouter">
-        <div class="gmap_canvas">
-          <iframe
-            width="150"
-            height="150"
-            id="gmap_canvas"
-            src="https://maps.google.com/maps?q=Brandsen%20142,%20Bragado&t=&z=15&ie=UTF8&iwloc=&output=embed"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-          ></iframe
-          ><a href="https://123movies-to.org"></a><br /><a
-            href="https://www.embedgooglemap.net"
-            >add google map to website</a
-          >
-        </div>
-      </div> -->
       <iframe
         width="150"
         height="150"
@@ -83,17 +64,4 @@ export default Vue.extend({
 });
 </script>
 
-<style>
-/* .mapouter {
-  position: relative;
-  text-align: right;
-  height: 150px;
-  width: 150px;
-}
-.gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  height: 150px;
-  width: 150px;
-} */
-</style>
+<style></style>
