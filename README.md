@@ -1,4 +1,3 @@
-# meba-amoblamientos deployed in https://amoblamientosmeba.netlify.app/
 
 ## Project setup
 ```
