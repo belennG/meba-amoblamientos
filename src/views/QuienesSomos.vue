@@ -1,6 +1,6 @@
 <template>
   <div
-    class="pt-28 md:pt-28 lg:pt-32 pb-5 md:pb-0 md:py-8  bg-almond text-blueish-text-color grid grid-cols-1"
+    class="pt-12 md:pt-28 lg:pt-32 pb-5 md:pb-0 md:py-8  bg-almond text-blueish-text-color grid grid-cols-1"
     id="quienes-somos"
   >
     <h1 class=" text-4xl md:text-6xl mb-5 md:mb-10 text-center underline">

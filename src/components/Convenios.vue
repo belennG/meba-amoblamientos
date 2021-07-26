@@ -12,7 +12,7 @@
 
     <div
       id="convenios"
-      class="w-auto md:px-32 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-x-10 mx-auto"
+      class="w-auto grid grid-cols-2 xl:px-32 md:flex md:flex-row mx-auto"
     >
       <div
         class="border-2 w-32 h-34 my-1 py-1 px-1 md:w-56 md:h-56 lg:w-72 lg:h-80 md:mx-2 md:my-2 md:py-8 bg-isabelline rounded-lg col-span-1 mx-auto"
@@ -20,11 +20,11 @@
         :key="index"
       >
         <h1
-          class="flex items-center justify-center text-xs md:text-xl text-blueish-text-color text-center"
+          class="flex items-center justify-center text-xs md:text-base xl:text-xl text-blueish-text-color text-center"
         >
           {{ convenio.name }}
         </h1>
-        <div class="flex items-center justify-center h-20 md:h-40 lg:h-72">
+        <div class="flex items-center justify-center h-20 md:h-40 lg:h-60">
           <img
             :src="convenio.image"
             :alt="convenio.name"
@@ -48,7 +48,7 @@ export default Vue.extend({
     return {
       convenios: [
         { name: "Provincia de Misiones", image: colegioMisiones },
-        { name: "Provincia de Bs As", image: colegioBsAs },
+        { name: "Provincia de Buenos Aires", image: colegioBsAs },
         { name: "Provincia de San Luis", image: colegioSanLuis },
         { name: "Provincia de Córdoba", image: colegioCordoba },
       ],

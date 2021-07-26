@@ -1,5 +1,5 @@
 <template>
-  <div class="gallery-wrapper height relative px-4 py-24">
+  <div class="gallery-wrapper px-4 py-24 lg:py-8">
     <div class="">
       <Gallery />
     </div>
