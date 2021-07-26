@@ -1,18 +1,17 @@
 <template>
   <div
-    class="py-40  bg-almond text-blueish-text-color relative"
+    class="pt-12 md:pt-28 lg:pt-32 pb-5 md:pb-0 md:py-8  bg-almond text-blueish-text-color grid grid-cols-1"
     id="quienes-somos"
   >
-    <h1 class="text-6xl title mb-6 mx-4">Quienes Somos</h1>
-    <div class="grid grid-cols-5">
-      <div
-        class="slider-wrapper slider col-span-2 lg:col-span-3"
-        style="min-height: 50vh"
-      >
+    <h1 class=" text-4xl md:text-6xl mb-5 md:mb-10 text-center underline">
+      Quienes Somos
+    </h1>
+    <div class="md:grid grid-cols-1 px-2 md:px-4">
+      <div class="w-full h-16 md:pb-6" style="min-height: 50vh">
         <Slider :images="imagesAsData" />
       </div>
       <div
-        class="quienes-somos-texto col-span-1 lg:col-span-2 text-justify text-2xl mb-4 mx-2"
+        class="col-span-1 lg:col-span-2 text-justify text-xl md:text-2xl px-4 py-4 md:pb-8"
       >
         <h2 class="">
           Somos una empresa familiar con mas de quince años de trayectoria

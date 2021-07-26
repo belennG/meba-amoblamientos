@@ -1,17 +1,15 @@
 <template>
-  <div class="height relative" style="margin-top:80px">
+  <div class="h-auto">
     <BackgroundPhoto>
-      <div class="wrapper flex">
-        <div
-          class="formulario-contacto-wrapper mx-48 my-16 relative w-1/2 float-right"
-        >
-          <div class="formulario-contacto border-2  box-content w-80">
-            <h1>Envíenos su consulta</h1>
-            <p>
+      <div class="wrapper grid grid-cols-1 lg:grid-cols-2 lg:py-5">
+        <div class="formulario-contacto-wrapper col-span-1">
+          <div class="px-2 lg:px-10 lg:py-6 py-2 w-full">
+            <h1 class="text-center">Envíenos su consulta</h1>
+            <p class="text-center">
               Estamos para responder todas sus dudas. Complete el formulario y
               contestaremos a la brevedad.
             </p>
-            <form action="">
+            <form action="" class="text-center py-5">
               <p>Nombre:</p>
               <input
                 required
@@ -47,40 +45,23 @@
               ></textarea>
               <button
                 type="submit"
-                class="block bg-blue-500 text-white px-4 py-2 rounded-lg"
+                class="bg-blue-500 block text-white px-4 py-2 rounded-lg  mx-auto"
               >
                 Enviar
               </button>
             </form>
           </div>
         </div>
-        <div class="faqs w-1/2 relative float-left px-12 py-12">
+        <div class="col-span-1 h-full hidden lg:inline lg:py-5">
+          <h1 class="text-center underline">Preguntas frecuentes</h1>
           <VueFaqAccordion :items="faqs" />
         </div>
-        <!-- <div class="preguntas-frecuentes-wrapper flex">
-          <div
-            class="preguntas-frecuentes w-3/4 flex-col inline mt-24"
-            v-for="faq in faqs"
-            :key="faq.id"
-            @click="faq.showAnswer = !faq.showAnswer"
-          >
-            <div
-              class="h-12 w-1/3 pregunta-frecuente bg-red-500 hover:underline mb-8 z-40 inline"
-            >
-              <div class="faq-wrapper">
-                <h2>{{ faq.pregunta }}</h2>
-                <i class="far fa-plus-square"></i>
-                <i class="far fa-minus-square"></i>
-                <div
-                  class="h-auto w-30 respuesta bg-blue-500"
-                  v-if="faq.showAnswer"
-                >
-                  <p>{{ faq.respuesta }}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
+      </div>
+    </BackgroundPhoto>
+    <BackgroundPhoto class="md:hidden">
+      <div class="col-span-1 h-full px-1 pt-2 pb-16">
+        <h1 class="text-center underline">Preguntas frecuentes</h1>
+        <VueFaqAccordion :items="faqs" class="text-sm"></VueFaqAccordion>
       </div>
     </BackgroundPhoto>
   </div>
@@ -208,8 +189,4 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped>
-/* .height {
-  height: calc(100vh - 104px);
-} */
-</style>
+<style scoped></style>

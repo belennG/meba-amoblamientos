@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div style="height: calc(100vh - 104px); margin-top: 80px;">
+    <div style="height: calc(100vh - 104px)">
       <h1
         class="z-20 absolute top-1/3 left-6 text-gray-300 text-shadow"
         style="font-size:4vw"
       >
         Amoblamientos de Farmacia
       </h1>
-      <Slider :images="imagesAsData" style="opacity: 0,6"></Slider>
+      <Slider :images="imagesAsData" style="opacity: 0.6"></Slider>
     </div>
     <div
       id=""
@@ -63,10 +63,10 @@
     </div>
     <div
       id="render"
-      class="md:h-auto lg:h-screen w-screen bg-green-sheen text-isabelline px-4 py-6 md:px-10 md:py-16 lg:py-6 grid grid-cols-1"
+      class="md:h-auto lg:h-screen w-screen bg-green-sheen text-isabelline px-4 py-16 md:px-10 md:py-16 lg:py-6 grid grid-cols-1"
     >
       <div
-        class="render-fotos-izq md:flex md:h-auto md:w-auto md:items-center justify-center"
+        class="render-fotos-izq md:flex md:h-auto md:w-auto md:items-center justify-center md:space-x-12"
       >
         <img
           :src="render[0]"
@@ -86,7 +86,7 @@
         </h1>
       </div>
       <div
-        class="render-fotos-der md:flex md:h-auto md:w-auto md:items-center md:justify-center"
+        class="render-fotos-der md:flex md:h-auto md:w-auto md:items-center md:justify-center md:space-x-12"
       >
         <img
           :src="render[2]"
@@ -102,7 +102,7 @@
     </div>
     <div
       id="gallery"
-      class="px-4 py-4 w-screen bg-isabelline text-hunter-green"
+      class="px-4 w-screen bg-isabelline text-hunter-green py-16"
     >
       <Gallery />
       <router-link :to="{ name: 'NuestrosProyectos' }">
@@ -110,7 +110,7 @@
       </router-link>
     </div>
     <div
-      class=" h-auto w-auto lg:h-screen lg:w-screen bg-darkolive-green px-2 py-8"
+      class=" h-auto w-auto lg:h-screen lg:w-screen bg-darkolive-green px-2 py-16"
     >
       <Convenios />
     </div>
