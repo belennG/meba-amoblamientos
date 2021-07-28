@@ -18,15 +18,20 @@
       </span>
     </div>
     <!-- Modal window -->
-    <div
-      class="modal-window"
-      v-if="selectedIndexToShowAsSlider != -1"
-      @click="hideSlider()"
-    >
+    <div class="modal-window" v-if="selectedIndexToShowAsSlider != -1">
       <div
         class="w-screen h-screen fixed inset-0 bg-black bg-opacity-80 justify-center items-center z-50 p-10"
       >
-        <Slider :images="photos[selectedIndexToShowAsSlider].image" />
+        <button
+          class="absolute right-12 lg:right-12 top-12 z-40 text-gray-500"
+          @click="hideSlider()"
+        >
+          <i class="fas fa-times fa-2x"></i>
+        </button>
+        <Slider
+          :images="photos[selectedIndexToShowAsSlider].image"
+          :showButtons="showButtons"
+        />
         <!-- Props with the photo.id & index of the photo ? -->
       </div>
     </div>
@@ -46,6 +51,7 @@ export default Vue.extend({
       showPhoto: false,
       selectedIndexToShowAsSlider: -1,
       photos: Photos,
+      showButtons: true,
     };
   },
   methods: {

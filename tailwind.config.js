@@ -24,9 +24,11 @@ module.exports = {
         "nianza-green": "#e8fccf",
         "darkolive-green": "#566e3d",
       },
-      backgroundImage: (theme) => ({
-        contacto: "url('./assets/background-image/MEBAbackground0.jpeg')",
-      }),
+      inset: {
+        "100": "25rem",
+        "104": "26rem",
+        "108": "27rem",
+      },
     },
     variants: {
       extend: {},

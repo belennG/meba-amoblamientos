@@ -1,54 +1,53 @@
 <template>
   <div class="h-auto">
     <BackgroundPhoto>
-      <div class="wrapper grid grid-cols-1 lg:grid-cols-2 lg:py-5">
+      <div class="wrapper grid grid-cols-1 lg:grid-cols-2 lg:py-5 ">
         <div class="formulario-contacto-wrapper col-span-1">
-          <div class="px-2 lg:px-10 lg:py-6 py-2 w-full">
+          <div class="px-2 lg:px-10 lg:py-6 w-full">
             <h1 class="text-center">Envíenos su consulta</h1>
             <p class="text-center">
               Estamos para responder todas sus dudas. Complete el formulario y
               contestaremos a la brevedad.
             </p>
-            <form action="" class="text-center py-5">
+            <form @submit.prevent="sendEmail" class="text-center py-5">
               <p>Nombre:</p>
               <input
                 required
                 type="text"
-                name="Nombre"
+                name="name"
                 id=""
-                class="border-2 rounded w-auto"
+                class="border-2 rounded w-auto inline-block"
               />
               <p>Email:</p>
               <input
                 required
                 type="email"
-                name="Email"
+                name="email"
                 id=""
-                class="border-2 rounded w-auto"
+                class="border-2 rounded w-auto inline-block"
               />
               <p>Teléfono:</p>
               <input
                 required
                 type="tel"
-                name="telefono"
+                name="telephone"
                 id=""
-                class="border-2 rounded w-auto"
+                class="border-2 rounded w-auto inline-block"
               />
               <p>Su consulta:</p>
               <textarea
                 required
-                name=""
-                id=""
+                name="message"
+                id="message"
                 cols="30"
                 rows="10"
                 class="border-2 rounded w-auto"
               ></textarea>
-              <button
+              <input
                 type="submit"
                 class="bg-blue-500 block text-white px-4 py-2 rounded-lg  mx-auto"
-              >
-                Enviar
-              </button>
+                value="Enviar"
+              />
             </form>
           </div>
         </div>
@@ -67,14 +66,46 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from "vue";
 import BackgroundPhoto from "@/components/BackgroundPhoto.vue";
 import VueFaqAccordion from "vue-faq-accordion";
+import emailjs from "emailjs-com";
 
 export default Vue.extend({
+  name: "ContactUs",
+  methods: {
+    sendEmail(e) {
+      try {
+        emailjs.sendForm(
+          "service_na3yd6p",
+          "template_xg9n5nj",
+          e.target,
+          "user_zLXrRbebfxGQ1U9EAVr1p",
+          {
+            name: this.name,
+            email: this.email,
+            telephone: this.telephone,
+            message: this.message,
+          }
+        );
+        console.log("Works");
+      } catch (error) {
+        console.log({ error });
+      }
+      // Reset form field
+      this.name = "";
+      this.email = "";
+      this.telephone = "";
+      this.message = "";
+    },
+  },
   data() {
     return {
+      name: "",
+      email: "",
+      telephone: "",
+      message: "",
       props: {
         faqs: {
           type: Array,

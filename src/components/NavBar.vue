@@ -26,7 +26,7 @@
         id="navbar-links"
       >
         <div
-          class="w-20 h-16 hover:text-gray-700 hover:underline text-black router-link-container "
+          class="w-20 h-16 hover:text-gray-700 hover:underline router-link-container "
         >
           <router-link
             :to="{ name: 'Inicio' }"

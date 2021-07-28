@@ -11,19 +11,22 @@
     </transition-group>
     <div class="buttons" v-if="showButtons">
       <button
-        class="prev cursor-pointer absolute font-bold rounded-lg hover:bg-opacity-90 top-2/4 left-0 h-30 w-30 hover:bg-gray-600"
+        class="prev cursor-pointer relative font-bold rounded-lg hover:bg-opacity-90 top-28 md:top-104 xl:top-64 left-0 h-30 w-30  text-black"
         @click="prev"
         href="#"
       >
-        <i class="fas fa-chevron-left fa-7x"></i>
+        <i class="fas fa-chevron-left fa-4x"></i>
       </button>
       <button
-        class="next cursor-pointer absolute font-bold rounded-lg hover:bg-opacity-90 top-2/4 right-0 h-30 w-30 hover:bg-gray-600"
+        class="next cursor-pointer absolute font-bold rounded-lg hover:bg-opacity-90 top-28 md:top-104 xl:top-64 right-0 h-30 w-30 text-black"
         @click="next"
         href="#"
       >
-        <i class="fas fa-chevron-right fa-7x"></i>
+        <i class="fas fa-chevron-right fa-4x"></i>
       </button>
+      <!-- <button class="absolute right-2 top-1" @click="hideSlider()">
+        <i class="fas fa-times fa-2x"></i>
+      </button> -->
     </div>
   </div>
 </template>
@@ -38,17 +41,19 @@ export default Vue.extend({
       type: Array,
       required: true,
     },
-    // opacity: {
-    //   type: String,
-    //   required: true,
-    // }
+    showButtons: {
+      type: Boolean,
+      required: true,
+      default: false,
+    },
   },
   data() {
     return {
       timer: null,
       currentIndex: 2,
       imagesAsData: this.images,
-      showButtons: false,
+      showButtonsData: false,
+      selectedIndexToShowAsSlider: 0,
     };
   },
   mounted: function() {
@@ -57,7 +62,7 @@ export default Vue.extend({
 
   methods: {
     startSlide: function() {
-      this.timer = setInterval(this.next, 5000);
+      this.timer = setInterval(this.next, 50000);
     },
 
     next: function() {
@@ -65,6 +70,9 @@ export default Vue.extend({
     },
     prev: function() {
       this.currentIndex -= 1;
+    },
+    hideSlider() {
+      this.selectedIndexToShowAsSlider = -1;
     },
   },
 
@@ -79,19 +87,11 @@ export default Vue.extend({
 </script>
 
 <style>
-/* #main-image {
-  height: calc(100vh - 88px);
-  width: calc(100vw - 120px);
-  margin-left: 52px;
-} */
-
 .fade-enter-active,
 .fade-leave-active {
   transition: all 0.9s ease;
   overflow: hidden;
   visibility: visible;
-  /* position: absolute; */
-  /* width: auto; */
   opacity: 1;
 }
 

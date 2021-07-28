@@ -7,7 +7,11 @@
       >
         Amoblamientos de Farmacia
       </h1>
-      <Slider :images="imagesAsData" style="opacity: 0.6"></Slider>
+      <Slider
+        :images="imagesAsData"
+        style="opacity: 0.6"
+        :showButtons="showButtons"
+      ></Slider>
     </div>
     <div
       id=""
@@ -33,12 +37,6 @@
       >
         <ul class="space-y-4 mt-6 lg:mt-0 mx-auto">
           <li>
-            <div class="pet-shops flex h-auto items-center space-x-4">
-              <i class="fas fa-paw fa-3x"></i>
-              <p class="text-md md:text-2xl">Pet Shops</p>
-            </div>
-          </li>
-          <li>
             <div class="farmacias flex h-auto items-center space-x-3">
               <i class="fas fa-clinic-medical fa-3x"></i>
               <p class="text-md md:text-2xl">Farmacias</p>
@@ -56,6 +54,12 @@
             <div class="laboratorios flex h-auto items-center space-x-5">
               <i class="fas fa-stethoscope fa-3x"></i>
               <p class="text-md md:text-2xl">Laboratorios</p>
+            </div>
+          </li>
+          <li>
+            <div class="pet-shops flex h-auto items-center space-x-4">
+              <i class="fas fa-paw fa-3x"></i>
+              <p class="text-md md:text-2xl">Pet Shops</p>
             </div>
           </li>
         </ul>
@@ -81,8 +85,8 @@
       </div>
       <div class="title">
         <h1 class=" text-md md:text-2xl mx-2 text-center px-5 py-6">
-          Querés ver como quedará tu farmacia antes de tenerla? Render incluido
-          en todos los presupuestos!
+          Querés ver como quedará tu farmacia antes de tenerla? Render sin
+          cargo!
         </h1>
       </div>
       <div
@@ -134,7 +138,7 @@ export default Vue.extend({
       height: "1400px",
       imagesAsData: MEBA,
       render: Render,
-
+      showButtons: false,
       displayFarmacia: false,
     };
   },
