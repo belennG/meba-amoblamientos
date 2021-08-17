@@ -15,7 +15,7 @@
     </div>
     <div
       id=""
-      class="h-auto w-auto lg:h-screen lg:w-screen bg-middle-red px-12 py-12 text-isabelline grid grid-cols-1"
+      class="h-auto w-auto lg:h-screen lg:w-screen bg-middle-red px-12 xl:px-52 py-12 text-isabelline grid grid-cols-1"
     >
       <h1 class=" text-5xl md:text-7xl text-center pb-6 lg:pt-6">
         ESTAMOS EN TODO EL PAÍS
@@ -23,7 +23,7 @@
 
       <p
         id="paragraph"
-        class="text-lg text-justify md:text-2xl font-metropolis"
+        class="text-lg text-justify md:text-2xl font-metropolis "
       >
         Somos líderes en diseño y construcción de mobiliario para tu negocio -ya
         sea farmacia, consultorio, dietética, veterinaria, pet-shop,
@@ -67,7 +67,7 @@
     </div>
     <div
       id="render"
-      class="md:h-auto lg:h-screen w-screen bg-green-sheen text-isabelline px-4 py-16 md:px-10 md:py-16 lg:py-6 grid grid-cols-1"
+      class="md:h-auto lg:h-screen w-screen bg-green-sheen text-isabelline px-4 py-16 xl:py-24 md:px-10 md:py-16 grid grid-cols-1"
     >
       <div
         class="render-fotos-izq md:flex md:h-auto md:w-auto md:items-center justify-center md:space-x-12"
