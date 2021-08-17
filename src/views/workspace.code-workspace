@@ -1,0 +1,19 @@
+{
+  "folders": [
+	{
+		"path": "../.."
+	},
+	{
+		"path": "../../../spark"
+	},
+	{
+		"path": "../../../toilet-map-leipzig"
+	},
+	{
+		"path": "../../../dropbox-rebuild-vue"
+	}
+],
+  "settings": {
+    "git.ignoreLimitWarning": true
+  }
+}

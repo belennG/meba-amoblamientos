@@ -7,11 +7,15 @@
       >
         Amoblamientos de Farmacia
       </h1>
-      <Slider :images="imagesAsData" style="opacity: 0.6"></Slider>
+      <Slider
+        :images="imagesAsData"
+        style="opacity: 0.6"
+        :showButtons="showButtons"
+      ></Slider>
     </div>
     <div
       id=""
-      class="h-auto w-auto lg:h-screen lg:w-screen bg-middle-red px-12 py-12 text-isabelline grid grid-cols-1"
+      class="h-auto w-auto lg:h-screen lg:w-screen bg-middle-red px-12 xl:px-52 py-12 text-isabelline grid grid-cols-1"
     >
       <h1 class=" text-5xl md:text-7xl text-center pb-6 lg:pt-6">
         ESTAMOS EN TODO EL PAÍS
@@ -19,7 +23,7 @@
 
       <p
         id="paragraph"
-        class="text-lg text-justify md:text-2xl font-metropolis"
+        class="text-lg text-justify md:text-2xl font-metropolis "
       >
         Somos líderes en diseño y construcción de mobiliario para tu negocio -ya
         sea farmacia, consultorio, dietética, veterinaria, pet-shop,
@@ -32,12 +36,6 @@
         class="icons text-isabelline space-x-3 flex flex-wrap items-center  w-auto h-auto space-y-4"
       >
         <ul class="space-y-4 mt-6 lg:mt-0 mx-auto">
-          <li>
-            <div class="pet-shops flex h-auto items-center space-x-4">
-              <i class="fas fa-paw fa-3x"></i>
-              <p class="text-md md:text-2xl">Pet Shops</p>
-            </div>
-          </li>
           <li>
             <div class="farmacias flex h-auto items-center space-x-3">
               <i class="fas fa-clinic-medical fa-3x"></i>
@@ -58,12 +56,18 @@
               <p class="text-md md:text-2xl">Laboratorios</p>
             </div>
           </li>
+          <li>
+            <div class="pet-shops flex h-auto items-center space-x-4">
+              <i class="fas fa-paw fa-3x"></i>
+              <p class="text-md md:text-2xl">Pet Shops</p>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
     <div
       id="render"
-      class="md:h-auto lg:h-screen w-screen bg-green-sheen text-isabelline px-4 py-16 md:px-10 md:py-16 lg:py-6 grid grid-cols-1"
+      class="md:h-auto lg:h-screen w-screen bg-green-sheen text-isabelline px-4 py-16 xl:py-24 md:px-10 md:py-16 grid grid-cols-1"
     >
       <div
         class="render-fotos-izq md:flex md:h-auto md:w-auto md:items-center justify-center md:space-x-12"
@@ -81,8 +85,8 @@
       </div>
       <div class="title">
         <h1 class=" text-md md:text-2xl mx-2 text-center px-5 py-6">
-          Querés ver como quedará tu farmacia antes de tenerla? Render incluido
-          en todos los presupuestos!
+          Querés ver como quedará tu farmacia antes de tenerla? Render sin
+          cargo!
         </h1>
       </div>
       <div
@@ -134,7 +138,7 @@ export default Vue.extend({
       height: "1400px",
       imagesAsData: MEBA,
       render: Render,
-
+      showButtons: false,
       displayFarmacia: false,
     };
   },
