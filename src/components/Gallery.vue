@@ -17,7 +17,6 @@
         </p>
       </span>
     </div>
-    <!-- Modal window -->
     <div class="modal-window" v-if="selectedIndexToShowAsSlider != -1">
       <div
         class="w-screen h-screen fixed inset-0 bg-black bg-opacity-80 justify-center items-center z-50 p-10"
@@ -32,7 +31,6 @@
           :images="photos[selectedIndexToShowAsSlider].image"
           :showButtons="showButtons"
         />
-        <!-- Props with the photo.id & index of the photo ? -->
       </div>
     </div>
   </div>

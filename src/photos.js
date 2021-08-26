@@ -71,13 +71,13 @@ export const Photos = [
   {
     id: 2,
     name: "Farmacia Irma",
-    provincia: "Provincia de ",
+    provincia: "Provincia de Misiones",
     image: [Irma, Irma1, Irma2, Irma3],
   },
   {
     id: 3,
     name: "Farmacia Morena Jorge",
-    provincia: "Provincia de ",
+    provincia: "Provincia de Mendoza",
     image: [
       MorenaJorge,
       MorenaJorge1,
@@ -89,7 +89,7 @@ export const Photos = [
   {
     id: 4,
     name: "Farmacia Rivadavia",
-    provincia: "Provincia de",
+    provincia: "Provincia de San Juan",
     image: [
       Rivadavia,
       Rivadavia1,

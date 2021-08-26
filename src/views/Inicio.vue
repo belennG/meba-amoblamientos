@@ -127,7 +127,6 @@ import { Render, MEBA } from "../photos";
 
 import Slider from "@/components/Slider.vue";
 import Convenios from "@/components/Convenios.vue";
-// import Farmacia from "@/components/Farmacia.vue";
 
 import Gallery from "@/components/Gallery.vue";
 
@@ -145,7 +144,6 @@ export default Vue.extend({
   components: {
     Slider,
     Convenios,
-    // Farmacia,
     Gallery,
   },
 });
@@ -159,17 +157,6 @@ export default Vue.extend({
 .grow:hover {
   transform: scale(1.2);
 }
-
-/* #inicio {
-  display: grid;
-  width: 100%;
-  height: 100%;
-  grid-template-areas:
-    "title paragraph paragraph"
-    "icons icons icons";
-  grid-template-rows: 33% 33% 33%;
-  grid-template-columns: 33% 33% 33%;
-} */
 
 .height {
   height: calc(100vh - 30px);

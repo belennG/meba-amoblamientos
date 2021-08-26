@@ -58,15 +58,4 @@ export default Vue.extend({
   height: calc(100vh - 104px);
 }
 
-/* #quienes-somos {
-  display: grid;
-  grid-template-areas:
-    "title title title title"
-    "slider slider paragraph paragraph"
-    "slider slider paragraph paragraph"
-    "slider slider paragraph paragraph"
-    "slider slider paragraph paragraph";
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: 1/2fr, 1fr 1fr 1fr 1fr;
-} */
 </style>

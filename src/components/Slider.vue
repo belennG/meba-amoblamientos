@@ -24,9 +24,6 @@
       >
         <i class="fas fa-chevron-right fa-4x"></i>
       </button>
-      <!-- <button class="absolute right-2 top-1" @click="hideSlider()">
-        <i class="fas fa-times fa-2x"></i>
-      </button> -->
     </div>
   </div>
 </template>
@@ -62,7 +59,7 @@ export default Vue.extend({
 
   methods: {
     startSlide: function() {
-      this.timer = setInterval(this.next, 50000);
+      this.timer = setInterval(this.next, 5000);
     },
 
     next: function() {

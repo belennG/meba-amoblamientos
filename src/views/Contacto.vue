@@ -9,6 +9,9 @@
               Estamos para responder todas sus dudas. Complete el formulario y
               contestaremos a la brevedad.
             </p>
+            <p class="text-red-500 text-center pt-4" v-if="mensajeEnviado">
+              Su mensaje ha sido enviado.
+            </p>
             <form @submit.prevent="sendEmail" class="text-center py-5">
               <p>Nombre:</p>
               <input
@@ -89,7 +92,7 @@ export default Vue.extend({
             message: this.message,
           }
         );
-        console.log("Works");
+        this.mensajeEnviado = true;
       } catch (error) {
         console.log({ error });
       }
@@ -102,6 +105,7 @@ export default Vue.extend({
   },
   data() {
     return {
+      mensajeEnviado: false,
       name: "",
       email: "",
       telephone: "",
@@ -126,48 +130,41 @@ export default Vue.extend({
           title: "Trabajan en todo el pais?",
           value:
             "Si. Nuestra empresa tiene presencia en todas las provincias. Así que no se preocupe, llegaremos allí donde lo necesite",
-          // showAnswer: false,
         },
         {
           id: 2,
           title: "Estoy construyendo, cuando debo contactarlos?",
           value: "Lo antes posible",
-          // showAnswer: false,
         },
         {
           id: 3,
           title: "Puedo ver el proyecto antes de contratarlo?",
           value:
             "Por supuesto. Nuestra oficina de diseño le enviará material para que ud. elija el diseño que más le guste.",
-          // showAnswer: false,
         },
         {
           id: 4,
           title: "Puedo acceder a bonificaciones?",
           value:
             "Consúltenos. Tenemos convenios con varios Colegios de Farmacéuticos de todo el país que también incluyen descuentos.",
-          // showAnswer: false,
         },
         {
           id: 5,
           title: "Puedo agregar amoblamientos a los existentes?",
           value:
             "Si, es posible. Pensaremos alternativas para optimizar los espacios y lograr la máxima funcionalidad entre lo existente y nuestra propuesta. Solo tiene que llamarnos e iremos a visitarlo.",
-          // showAnswer: false,
         },
         {
           id: 6,
           title: "No puedo cerrar. Como podemos hacer?",
           value:
             "Confíe en nosotros. Sabemos hacerlo. Trabajaremos sin interferir en su trabajo.",
-          // showAnswer: false,
         },
         {
           id: 7,
           title: "Pueden visitarme antes de concretar?",
           value:
             "Para nosotros será un placer conocerlo. Recuerde que tenemos presencia en todo el país. Llámenos.",
-          // showAnswer: false,
         },
       ],
     };

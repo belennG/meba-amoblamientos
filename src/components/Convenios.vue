@@ -58,13 +58,5 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-/* .router-link-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
-/* .height {
-  height: calc(100vh - 30px);
-} */
 </style>

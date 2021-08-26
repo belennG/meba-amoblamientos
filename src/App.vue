@@ -23,10 +23,6 @@ export default {
 </script>
 
 <style>
-/* body {
-  font-family: "Metropolis" !important;
-} */
-
 @font-face {
   font-family: "Metropolis";
   src: local("Metropolis"),
